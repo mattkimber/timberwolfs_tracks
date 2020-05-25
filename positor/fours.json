@@ -1,0 +1,11 @@
+{
+    "files": [
+        "ballast_junction.vox"
+    ],
+    "operations": [
+		{
+		  "name": "_4",
+		  "type": "produce_empty"
+		}
+    ]
+}      

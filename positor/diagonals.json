@@ -1,0 +1,56 @@
+{
+    "files": [
+        "rail.vox",
+        "../intermediate/rail_ballasted_2.vox",
+        "tdrl.vox",
+		"../intermediate/tdrl_ballasted_2.vox"
+    ],
+    "operations": [
+		{
+		  "name": "_ndiag",
+		  "type": "rotate",
+		  "angle": -45,
+		  "x_offset": 0,
+          "y_offset": -2,
+          "scale": {
+              "x": 1.4,
+              "y": 1.4
+          },
+          "bounding_volume": {
+            "min": {
+              "x": 4,
+              "y": 4,
+              "z": 0
+            },
+            "max": {
+              "x": 128,
+              "y": 128,
+              "z": 40
+            }  
+          }
+        },
+        {
+            "name": "_ndiag_rev",
+            "type": "rotate",
+            "angle": 45,
+            "x_offset": 0,
+            "y_offset": -4,
+            "scale": {
+                "x": 1.4,
+                "y": 1.4
+            },
+            "bounding_volume": {
+              "min": {
+                "x": 4,
+                "y": 4,
+                "z": 0
+              },
+              "max": {
+                "x": 128,
+                "y": 128,
+                "z": 40
+              }  
+            }
+          }
+    ]
+}      

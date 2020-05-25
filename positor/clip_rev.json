@@ -1,0 +1,15 @@
+{
+    "files": [
+        "rail_ballasted_2_ndiag_rev.vox",
+        "rail_ndiag_rev.vox",
+        "tdrl_ballasted_2_ndiag_rev.vox",
+        "tdrl_ndiag_rev.vox"
+    ],
+    "operations": [
+        {
+          "name": "_clipped_4",
+          "type": "remove",
+          "file": "../voxels/diagonal_clip_rev.vox"
+        }
+    ]
+}      

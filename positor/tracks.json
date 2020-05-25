@@ -1,0 +1,21 @@
+{
+    "files": [
+        "rail.vox",
+        "tdrl.vox",
+        "lc_modern_track.vox"
+    ],
+    "operations": [
+        {
+          "name": "_ballasted_2",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_straight.vox"
+        },
+		{
+		  "name": "_clear_2",
+		  "type": "produce_empty"
+		}
+    ]
+}      

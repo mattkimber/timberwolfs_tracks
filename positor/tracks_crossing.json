@@ -1,0 +1,16 @@
+{
+    "files": [
+        "rail_crossing.vox",
+        "tdrl_crossing.vox"
+    ],
+    "operations": [
+        {
+          "name": "_ballasted_1",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_x.vox"
+        }
+    ]
+}      

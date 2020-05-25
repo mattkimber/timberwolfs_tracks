@@ -1,0 +1,16 @@
+{
+    "files": [
+        "ballast_x.vox",
+		"ballast_junction.vox",
+		"ballast_straight.vox"
+    ],
+    "operations": [
+        {
+          "name": "",
+          "type": "repeat",
+		  "truncate": true,
+		  "n": 0,
+          "file": "ballast_stones.vox"
+        }
+    ]
+}      

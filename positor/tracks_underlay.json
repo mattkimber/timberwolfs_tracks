@@ -1,0 +1,24 @@
+{
+    "files": [
+        "rail_underlay.vox",
+        "tdrl_underlay.vox"
+    ],
+    "operations": [
+        {
+          "name": "_junction_4",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_junction.vox"
+        },
+		{  
+          "name": "_x_1",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_x.vox"
+        }
+    ]
+}      

@@ -1,0 +1,30 @@
+{
+    "grf": {
+        "author_id": "TWF",
+        "grf_id": 6,
+        "name": "Timberwolf's Tracks",
+        "description": "Work in progress for what will one day be a 2x zoom track set featuring multiple eras and types of rail",
+        "min_compat_version": 1,
+        "filename": "timberwolfs_tracks.nml",
+        "language": "english", 
+        "parameters": []
+    },
+    "static_templates": [
+        {
+          "template":  "templates/static/layouts.nml"
+        },
+        {
+            "template":  "templates/static/crossing_layouts.nml"
+        }
+    ],
+    "sprites": {
+        "table": "table.csv",
+        "template_directory": "templates"
+    },
+    "fixed_strings": {
+        "STR_MENU_RAIL": "Railway construction",
+        "STR_TOOLBAR_RAIL": "Railway Construction",
+        "STR_MENU_3RDR": "3rd rail electrified railway construction",
+        "STR_TOOLBAR_3RDR": "3rd Rail Electrified Railway Construction"
+    }
+}

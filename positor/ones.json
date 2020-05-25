@@ -1,0 +1,11 @@
+{
+    "files": [
+        "ballast_x.vox"
+    ],
+    "operations": [
+		{
+		  "name": "_1",
+		  "type": "produce_empty"
+		}
+    ]
+}      

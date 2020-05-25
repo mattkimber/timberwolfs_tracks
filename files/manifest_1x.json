@@ -1,0 +1,18 @@
+{
+  "lighting_angle": 60,
+  "lighting_elevation": 65,
+  "depth_influence": 0,
+  "tiled_normals": true,
+  "size": {
+    "x": 128,
+    "y": 128,
+    "z": 20
+  },
+  "render_elevation": 30,
+  "sprites": [
+    { "angle": 45,
+      "width": 64,
+      "height": 39
+    }
+  ]
+}

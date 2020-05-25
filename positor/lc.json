@@ -1,0 +1,12 @@
+{
+    "files": [
+        "../intermediate/lc_modern_track_ballasted_2.vox"
+    ],
+    "operations": [
+        {
+          "name": "_crossing_2",
+          "type": "remove",
+          "file": "lc_clip.vox"
+        }
+    ]
+}      

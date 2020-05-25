@@ -1,0 +1,4 @@
+name,id,numeric_id,template,rail_type_label,level_crossing_type
+Modern Level Crossing,lc_modern,0,level_crossing,,
+Railway,rail,1,railtype,RAIL,lc_modern
+3rd Rail Electrified Railway,tdrl,2,railtype,3RDR,lc_modern

@@ -1,0 +1,14 @@
+[
+  {
+    "prefixes": [
+        "rail", 
+        "tdrl",
+        "lc_modern"
+    ],
+	"suffixes": [
+		"32bpp",
+		"8bpp",
+		"mask"
+		]
+  }
+]

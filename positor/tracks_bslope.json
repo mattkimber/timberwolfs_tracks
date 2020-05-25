@@ -1,0 +1,14 @@
+{
+    "files": [
+        "../intermediate/rail_ballasted_2.vox",
+        "../intermediate/tdrl_ballasted_2.vox"
+    ],
+    "operations": [
+		{  
+		  "name": "_slope_4f",
+          "type": "stairstep",
+		  "x_steps": 5.625,
+		  "z_steps": 1
+        }
+    ]
+}      

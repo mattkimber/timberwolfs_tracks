@@ -1,0 +1,44 @@
+// Template for track overlays
+template tmpl_rails_crossing(m) {
+    tmpl_straight_y_m(129, m)
+}
+
+
+template tmpl_level_crossing_y_m(y,m) {
+    tmpl_rails_crossing(m)
+
+    // First row: / track, \ road
+    // Second row: \ track, / road
+
+    // Layout 2:
+    //    N
+    // W     E
+    //    S
+
+    // Layout 1:
+    //    N
+    // S     W
+    //    E
+
+
+    // N/N
+    [ ((2*72) + 10)*m, (y+5)*m, 44*m, 25*m, -16*m, -11*m, ANIM]
+    [ ((5*72) + 10)*m, (y+5)*m, 44*m, 25*m, -27*m, -13*m, ANIM]
+    // W/E
+    [ ((6*72) + 10)*m, (y+5)*m, 44*m, 25*m, -24*m, -18*m, ANIM]
+    [ ((3*72) + 10)*m, (y+5)*m, 44*m, 25*m, -27*m, -13*m, ANIM]
+    // E/S
+    [ ((4*72) + 10)*m, (y+5)*m, 44*m, 25*m, -16*m, -11*m, ANIM]
+    [ ((1*72) + 10)*m, (y+5)*m, 44*m, 25*m, -17*m, -19*m, ANIM]
+    // S/W
+    [ ((0*72) + 10)*m, (y+5)*m, 44*m, 25*m, -24*m, -18*m, ANIM]
+    [ ((7*72) + 10)*m, (y+5)*m, 44*m, 25*m, -17*m, -19*m, ANIM]
+}
+
+template tmpl_level_crossing_railtypes_open(m) {
+    tmpl_level_crossing_y_m(43,m)
+}
+
+template tmpl_level_crossing_railtypes_closed(m) {
+    tmpl_level_crossing_y_m(0,m)
+}
