@@ -43,15 +43,19 @@ mkdir -p intermediate/2
 mkdir -p intermediate/4
 mkdir -p intermediate/4f
 mkdir -p intermediate/8
+mkdir -p intermediate/fences
 
 mv intermediate/*_1.vox intermediate/1
 mv intermediate/*_2.vox intermediate/2
 mv intermediate/*_4f.vox intermediate/4f
 mv intermediate/*_4.vox intermediate/4
 
+# Level crossing sprites
 cp voxels/lc*open.vox intermediate/8
 cp voxels/lc*closed.vox intermediate/8
 
+# Fences
+cp voxels/fence* intermediate/fences
 
 cp voxels/lc_historic_open.vox intermediate/8/lc_plateway_open.vox
 cp voxels/lc_historic_closed.vox intermediate/8/lc_plateway_closed.vox
@@ -63,8 +67,6 @@ cp voxels/lc_historic_closed.vox intermediate/8/lc_ngrl_closed.vox
 #cp voxels/tile.vox intermediate/6/tile.vox
 #mkdir -p intermediate/pieces
 #cp voxels/tracks_2_level_crossing_pieces.vox intermediate/4/tracks_2_z_lc.vox
-
-
 
 for i in `ls intermediate/1`; do 
     echo "$i"
@@ -90,6 +92,13 @@ for i in `ls intermediate/8`; do
     echo "$i"
 	../gorender/renderobject.exe -i intermediate/8/$i -o $i -s 1,2 -u -m files/manifest_8x.json
 done
+
+# Fences (fixed, slopes are done by cargopositor and use 4x_f template)
+for i in `ls intermediate/fences`; do 
+    echo "$i"
+	../gorender/renderobject.exe -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
+done
+
 
 # Remove mask files for now
 #../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4 -k files/mask_1x.png

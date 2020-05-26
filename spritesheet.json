@@ -10,7 +10,8 @@
         "lc_old",
         "lc_plateway",
         "lc_ngrl",
-        "ptwy"
+        "ptwy",
+        "fence_wooden"
     ],
 	"suffixes": [
 		"32bpp",

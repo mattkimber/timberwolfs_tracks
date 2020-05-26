@@ -66,9 +66,9 @@ alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, 
 }
 
 
-// spriteset(fencesCC, "UNK") {
-//     tmpl_fences(0)
-// }
+spriteset({{.id}}_fences, "sheets_1x/fence_wooden_8bpp.png") {
+     tmpl_fences(0, 1)
+}
 
 // GUI not implemented
 //spriteset(gui_normal, "UNK") {
@@ -102,7 +102,7 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
 
         // not yet implemented
         //depots: depot_normal_rail;
-        //fences: fencesCC;
+        fences: {{.id}}_fences;
         //gui: gui_normal;        
     }
 }

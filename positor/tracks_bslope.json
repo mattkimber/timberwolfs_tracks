@@ -4,7 +4,8 @@
         "../intermediate/tdrl_ballasted_2.vox",
         "../intermediate/f_rl_ballasted_2.vox",
         "../intermediate/ptwy_ballasted_2.vox",
-        "../intermediate/ngrl_ballasted_2.vox"
+        "../intermediate/ngrl_ballasted_2.vox",
+        "../voxels/fence_wooden.vox"
     ],
     "operations": [
 		{  
