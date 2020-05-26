@@ -3,7 +3,13 @@
         "rail.vox",
         "../intermediate/rail_ballasted_2.vox",
         "tdrl.vox",
-		"../intermediate/tdrl_ballasted_2.vox"
+	    	"../intermediate/tdrl_ballasted_2.vox",
+        "f_rl.vox",
+	    	"../intermediate/f_rl_ballasted_2.vox",
+        "ptwy.vox",
+	    	"../intermediate/ptwy_ballasted_2.vox",
+        "ngrl.vox",
+	    	"../intermediate/ngrl_ballasted_2.vox"
     ],
     "operations": [
 		{

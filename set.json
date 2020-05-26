@@ -25,6 +25,12 @@
         "STR_MENU_RAIL": "Railway construction",
         "STR_TOOLBAR_RAIL": "Railway Construction",
         "STR_MENU_3RDR": "3rd rail electrified railway construction",
-        "STR_TOOLBAR_3RDR": "3rd Rail Electrified Railway Construction"
+        "STR_TOOLBAR_3RDR": "3rd Rail Electrified Railway Construction",
+        "STR_MENU_MTRO": "4th rail electrified railway construction",
+        "STR_TOOLBAR_MTRO": "4th Rail Electrified Railway Construction",
+        "STR_MENU_PTWY": "Plateway construction",
+        "STR_TOOLBAR_PTWY": "Plateway Construction",
+        "STR_MENU_NGRL": "Narrow gauge railway construction",
+        "STR_TOOLBAR_NGRL": "Narrow Gauge Railway Construction"
     }
 }

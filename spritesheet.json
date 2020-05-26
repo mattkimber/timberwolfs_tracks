@@ -3,7 +3,14 @@
     "prefixes": [
         "rail", 
         "tdrl",
-        "lc_modern"
+        "f_rl",
+        "ngrl",
+        "lc_historic",
+        "lc_modern",
+        "lc_old",
+        "lc_plateway",
+        "lc_ngrl",
+        "ptwy"
     ],
 	"suffixes": [
 		"32bpp",

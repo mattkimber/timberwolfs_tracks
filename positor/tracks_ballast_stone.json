@@ -2,7 +2,8 @@
     "files": [
         "rail.vox",
         "tdrl.vox",
-        "lc_modern_track.vox"
+        "f_rl.vox",
+        "ngrl.vox"
     ],
     "operations": [
         {

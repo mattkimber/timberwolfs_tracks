@@ -3,7 +3,13 @@
         "rail_ballasted_2_ndiag.vox",
         "rail_ndiag.vox",
         "tdrl_ballasted_2_ndiag.vox",
-        "tdrl_ndiag.vox"
+        "tdrl_ndiag.vox",
+        "f_rl_ballasted_2_ndiag.vox",
+        "f_rl_ndiag.vox",
+        "ptwy_ballasted_2_ndiag.vox",
+        "ptwy_ndiag.vox",
+        "ngrl_ballasted_2_ndiag.vox",
+        "ngrl_ndiag.vox"
     ],
     "operations": [
         {

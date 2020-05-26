@@ -1,0 +1,128 @@
+
+// Enormous switch cascade to allow upgrading level crossings over time
+
+// Choice between historic (bare wooden gate) or old (painted gate)
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_historic_old) {
+    3: lc_historic_level_crossing_switch;
+    1: lc_old_level_crossing_switch;
+}
+
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_historic_balanced) {
+    2: lc_historic_level_crossing_switch;
+    2: lc_old_level_crossing_switch;
+}
+
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_historic_new) {
+    1: lc_historic_level_crossing_switch;
+    3: lc_old_level_crossing_switch;
+}
+
+// Choice between old (painted gate) or modern (electrical)
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_modern_old) {
+    3: lc_old_level_crossing_switch;
+    1: lc_modern_level_crossing_switch;
+}
+
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_modern_balanced) {
+    2: lc_old_level_crossing_switch;
+    2: lc_modern_level_crossing_switch;
+}
+
+random_switch(FEAT_RAILTYPES, SELF,level_crossing_modern_new) {
+    1: lc_old_level_crossing_switch;
+    3: lc_modern_level_crossing_switch;
+}
+
+// 1910s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1910s,town_zone) {
+    TOWNZONE_CENTRE: level_crossing_historic_balanced;
+    TOWNZONE_INNER_SUBURB: level_crossing_historic_old;
+    TOWNZONE_OUTER_SUBURB: lc_historic_level_crossing_switch;
+    TOWNZONE_OUTSKIRT: lc_historic_level_crossing_switch;
+    lc_historic_level_crossing_switch;
+}
+
+// 1920s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1920s,town_zone) {
+    TOWNZONE_CENTRE: level_crossing_historic_balanced;
+    TOWNZONE_INNER_SUBURB: level_crossing_historic_balanced;
+    TOWNZONE_OUTER_SUBURB: level_crossing_historic_old;
+    TOWNZONE_OUTSKIRT: lc_historic_level_crossing_switch;
+    lc_historic_level_crossing_switch;
+}
+
+// 1930s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1930s,town_zone) {
+    TOWNZONE_CENTRE: level_crossing_historic_new;
+    TOWNZONE_INNER_SUBURB: level_crossing_historic_new;
+    TOWNZONE_OUTER_SUBURB: level_crossing_historic_balanced;
+    TOWNZONE_OUTSKIRT: level_crossing_historic_balanced;
+    level_crossing_historic_old;
+}
+
+// 1950s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1950s,town_zone) {
+    TOWNZONE_CENTRE: lc_old_level_crossing_switch;
+    TOWNZONE_INNER_SUBURB: level_crossing_historic_new;
+    TOWNZONE_OUTER_SUBURB: level_crossing_historic_new;
+    TOWNZONE_OUTSKIRT: level_crossing_historic_new;
+    level_crossing_historic_balanced;
+}
+
+// 1960s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1960s,town_zone) {
+    TOWNZONE_CENTRE: level_crossing_modern_old;
+    TOWNZONE_INNER_SUBURB: lc_old_level_crossing_switch;
+    TOWNZONE_OUTER_SUBURB: lc_old_level_crossing_switch;
+    TOWNZONE_OUTSKIRT: lc_old_level_crossing_switch;
+    level_crossing_historic_new;
+}
+
+// 1970s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1970s,town_zone) {
+    TOWNZONE_CENTRE: level_crossing_modern_new;
+    TOWNZONE_INNER_SUBURB: level_crossing_modern_balanced;
+    TOWNZONE_OUTER_SUBURB: level_crossing_modern_old;
+    TOWNZONE_OUTSKIRT: lc_old_level_crossing_switch;
+    lc_old_level_crossing_switch;
+}
+
+// 1980s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1980s,town_zone) {
+    TOWNZONE_CENTRE: lc_modern_level_crossing_switch;
+    TOWNZONE_INNER_SUBURB: level_crossing_modern_new;
+    TOWNZONE_OUTER_SUBURB: level_crossing_modern_balanced;
+    TOWNZONE_OUTSKIRT: level_crossing_modern_balanced;
+    level_crossing_modern_old;
+}
+
+// 1990s
+switch(FEAT_RAILTYPES, SELF,lc_switch_1990s,town_zone) {
+    TOWNZONE_CENTRE: lc_modern_level_crossing_switch;
+    TOWNZONE_INNER_SUBURB: lc_modern_level_crossing_switch;
+    TOWNZONE_OUTER_SUBURB: lc_modern_level_crossing_switch;
+    TOWNZONE_OUTSKIRT: level_crossing_modern_new;
+    level_crossing_modern_balanced;
+}
+
+// modern
+switch(FEAT_RAILTYPES, SELF,lc_switch_modern_era,town_zone) {
+    TOWNZONE_CENTRE: lc_modern_level_crossing_switch;
+    TOWNZONE_INNER_SUBURB: lc_modern_level_crossing_switch;
+    TOWNZONE_OUTER_SUBURB: lc_modern_level_crossing_switch;
+    TOWNZONE_OUTSKIRT: lc_modern_level_crossing_switch;
+    level_crossing_modern_new;
+}
+
+switch(FEAT_RAILTYPES, SELF,auto_level_crossing_switch, current_year) {
+    0..1905: lc_historic_level_crossing_switch;
+    1906..1920: lc_switch_1910s;
+    1921..1940: lc_switch_1920s;
+    1931..1950: lc_switch_1930s;
+    1951..1962: lc_switch_1950s;
+    1963..1969: lc_switch_1960s;
+    1970..1978: lc_switch_1970s;
+    1979..1985: lc_switch_1980s;
+    1986..1995: lc_switch_1990s;
+    lc_switch_modern_era;
+}

@@ -1,0 +1,12 @@
+{
+    "files": [
+        "../intermediate/lc_ngrl_track.vox"
+    ],
+    "operations": [
+        {
+          "name": "_crossing_2",
+          "type": "remove",
+          "file": "lc_clip_narrow_gauge.vox"
+        }
+    ]
+}      

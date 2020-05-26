@@ -1,7 +1,9 @@
 {
     "files": [
         "rail_underlay.vox",
-        "tdrl_underlay.vox"
+        "tdrl_underlay.vox",
+        "f_rl_underlay.vox",
+        "ngrl_underlay.vox"
     ],
     "operations": [
         {

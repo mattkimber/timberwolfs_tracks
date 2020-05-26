@@ -80,8 +80,14 @@ alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, 
 item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
     property {
         label: "{{.rail_type_label}}"; 
-        // compatible_railtype_list: ["RAIL", "ELRL", "_040", "_080", "RLOW", "RMED", "RHIG", "E040", "E080", "ELOW", "EMED", "EHIG", "HSTR", "DBNN", "DBNE", "DBHN", "DBHE"];
-        // powered_railtype_list: ["RAIL", "ELRL", "_040", "_080", "RLOW", "RMED", "RHIG", "E040", "E080", "ELOW", "EMED", "EHIG", "HSTR", "DBNN", "DBNE", "DBHN", "DBHE"];
+        
+        // TODO: fix railtypes
+        compatible_railtype_list: ["RAIL", "ELRL", "MTRO", "3RDR", "PTWY", "WGWY", "LIHT", "NGRL" ];
+        powered_railtype_list: ["RAIL", "ELRL", "MTRO", "3RDR", "PTWY", "WGWY", "LIHT", "NGRL" ];
+        
+        // TODO: proper introduction logic
+        introduction_date: date(1800,1,1);
+
         name: {{.name_string}};
         menu_text: string(STR_MENU_{{.rail_type_label}});
         toolbar_caption: string(STR_TOOLBAR_{{.rail_type_label}});

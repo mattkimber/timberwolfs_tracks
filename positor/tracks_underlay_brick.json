@@ -1,0 +1,23 @@
+{
+    "files": [
+        "ptwy_underlay.vox"
+    ],
+    "operations": [
+        {
+          "name": "_junction_4",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_junction_bricks.vox"
+        },
+		{  
+          "name": "_x_1",
+          "type": "repeat",
+		  "ignore_mask": true,
+		  "truncate": true,
+		  "n": 0,
+          "file": "../intermediate/ballast_x_bricks.vox"
+        }
+    ]
+}      

@@ -1,4 +1,12 @@
 name,id,numeric_id,template,rail_type_label,level_crossing_type
+Historic Level Crossing,lc_historic,0,level_crossing,,
+Old Level Crossing,lc_old,0,level_crossing,,
 Modern Level Crossing,lc_modern,0,level_crossing,,
-Railway,rail,1,railtype,RAIL,lc_modern
-3rd Rail Electrified Railway,tdrl,2,railtype,3RDR,lc_modern
+Plateway Level Crossing,lc_plateway,0,level_crossing,,
+Narrow Gauge Level Crossing,lc_ngrl,0,level_crossing,,
+Level Crossing Decider,lc_decider,0,level_crossing_switch,,
+Plateway,ptwy,1,railtype,PTWY,lc_plateway
+Railway,rail,2,railtype,RAIL,auto
+3rd Rail Electric,tdrl,3,railtype,3RDR,auto
+4th Rail Electric,f_rl,4,railtype,MTRO,auto
+Narrow Gauge Railway,ngrl,5,railtype,NGRL,lc_ngrl

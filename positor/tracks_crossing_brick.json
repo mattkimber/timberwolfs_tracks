@@ -1,7 +1,6 @@
 {
     "files": [
-        "rail_crossing.vox",
-        "tdrl_crossing.vox"
+        "ptwy_crossing.vox"
     ],
     "operations": [
         {
@@ -10,7 +9,7 @@
 		  "ignore_mask": true,
 		  "truncate": true,
 		  "n": 0,
-          "file": "../intermediate/ballast_x.vox"
+          "file": "../intermediate/ballast_x_bricks.vox"
         }
     ]
 }      

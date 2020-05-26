@@ -1,6 +1,9 @@
 {
     "files": [
-        "../intermediate/lc_modern_track_ballasted_2.vox"
+        "../intermediate/lc_modern_track.vox",
+        "../intermediate/lc_old_track.vox",
+        "../intermediate/lc_historic_track.vox",
+        "../intermediate/lc_plateway_track.vox"
     ],
     "operations": [
         {

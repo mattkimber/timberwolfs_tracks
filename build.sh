@@ -2,18 +2,40 @@
 
 mkdir -p intermediate
 
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/ballast.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_underlay.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_bslope.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_crossing.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/diagonals.json
-../cargopositor/cargopositor.exe -o intermediate -v voxels positor/lc.json
 
-../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/fours.json
-../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/ones.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/ballast.json
+
+# Ballasting
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_underlay_stone.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_underlay_brick.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_ballast_stone.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_ballast_brick.json
+
+# Crossings
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_crossing_brick.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_crossing_stone.json
+
+# Slopes/diagonals
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_bslope.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/diagonals.json
+
+
+# Level crossings
+cp intermediate/ptwy_ballasted_2.vox intermediate/lc_plateway_track.vox
+cp intermediate/rail_ballasted_2.vox intermediate/lc_modern_track.vox
+cp intermediate/rail_ballasted_2.vox intermediate/lc_old_track.vox
+cp intermediate/rail_ballasted_2.vox intermediate/lc_historic_track.vox
+cp intermediate/ngrl_ballasted_2.vox intermediate/lc_ngrl_track.vox
+
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/lc.json
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/lc_narrow_gauge.json
+
+# Clip diagonals
 ../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/clip.json
 ../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/clip_rev.json
+
+#../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/fours.json
+#../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/ones.json
 
 
 mkdir -p intermediate/1
@@ -30,6 +52,11 @@ mv intermediate/*_4.vox intermediate/4
 cp voxels/lc*open.vox intermediate/8
 cp voxels/lc*closed.vox intermediate/8
 
+
+cp voxels/lc_historic_open.vox intermediate/8/lc_plateway_open.vox
+cp voxels/lc_historic_closed.vox intermediate/8/lc_plateway_closed.vox
+cp voxels/lc_historic_open.vox intermediate/8/lc_ngrl_open.vox
+cp voxels/lc_historic_closed.vox intermediate/8/lc_ngrl_closed.vox
 
 # Render LC pieces
 # Temporary for testing
