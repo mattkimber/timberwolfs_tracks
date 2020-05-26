@@ -66,10 +66,6 @@ alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, 
 }
 
 
-spriteset({{.id}}_fences, "sheets_1x/fence_wooden_8bpp.png") {
-     tmpl_fences(0, 1)
-}
-
 // GUI not implemented
 //spriteset(gui_normal, "UNK") {
 //    tmpl_gui()
@@ -102,7 +98,7 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
 
         // not yet implemented
         //depots: depot_normal_rail;
-        fences: {{.id}}_fences;
+        fences: {{.id}}_fence_switch;
         //gui: gui_normal;        
     }
 }

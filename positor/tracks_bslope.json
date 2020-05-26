@@ -5,7 +5,12 @@
         "../intermediate/f_rl_ballasted_2.vox",
         "../intermediate/ptwy_ballasted_2.vox",
         "../intermediate/ngrl_ballasted_2.vox",
-        "../voxels/fence_wooden.vox"
+        "../voxels/fence_wooden.vox",
+        "../voxels/fence_early.vox",
+        "../voxels/fence_railings.vox",
+        "../voxels/fence_mesh.vox",
+        "../voxels/fence_chain.vox",
+        "../voxels/fence_bars.vox"
     ],
     "operations": [
 		{  

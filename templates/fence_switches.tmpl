@@ -1,0 +1,37 @@
+// Plateway
+switch(FEAT_RAILTYPES, SELF, ptwy_fence_switch, current_year) {
+    0..1848: fence_early_spriteset;
+    fence_chain_spriteset;
+}
+
+// Narrow Gauge
+switch(FEAT_RAILTYPES, SELF, ngrl_fence_switch, current_year) {
+    0..1878: fence_early_spriteset;
+    1879..1953: fence_chain_spriteset;
+    fence_wooden_spriteset;
+}
+
+// Mainline Rail
+switch(FEAT_RAILTYPES, SELF, rail_fence_switch, current_year) {
+    0..1871: fence_early_spriteset;
+    1872..1953: fence_wooden_spriteset;
+    1954..1968: fence_mesh_spriteset;
+    fence_railings_spriteset;
+}
+
+// 3rd Rail
+switch(FEAT_RAILTYPES, SELF, tdrl_fence_switch, current_year) {
+    0..1871: fence_early_spriteset;
+    1872..1957: fence_wooden_spriteset;
+    1958..1973: fence_mesh_spriteset;
+    fence_railings_spriteset;
+}
+
+// 4th Rail
+switch(FEAT_RAILTYPES, SELF, f_rl_fence_switch, current_year) {
+    0..1871: fence_early_spriteset;
+    1872..1946: fence_wooden_spriteset;
+    1947..1960: fence_mesh_spriteset;
+    fence_bars_spriteset;
+}
+

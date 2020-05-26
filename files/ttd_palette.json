@@ -66,8 +66,7 @@
       "_comment": "company colour 2",
       "start": 80,
       "end": 87,
-      "is_secondary_company_colour": true,
-      "smoothness": 2
+      "is_secondary_company_colour": true
     },
     {
       "_comment": "forest greens",
@@ -140,8 +139,7 @@
       "_comment": "company colour 1",
       "start": 198,
       "end": 205,
-      "is_primary_company_colour": true,
-      "smoothness": 2
+      "is_primary_company_colour": true
     },
     {
       "_comment": "sage greens",

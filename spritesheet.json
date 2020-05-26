@@ -11,7 +11,12 @@
         "lc_plateway",
         "lc_ngrl",
         "ptwy",
-        "fence_wooden"
+        "fence_wooden",
+        "fence_railings",
+        "fence_mesh",
+        "fence_early",
+        "fence_chain",
+        "fence_bars"
     ],
 	"suffixes": [
 		"32bpp",
