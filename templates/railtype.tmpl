@@ -1,3 +1,4 @@
+{{if not .catenary}}
 // Spritesets
 spriteset({{.id}}_underlays, "sheets_1x/{{.id}}_8bpp.png") {
     tmpl_underlay_railtypes(1)
@@ -64,7 +65,43 @@ alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  
 alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2x/{{.id}}_32bpp.png") {
     tmpl_bridges_underlay(2)
 }
+{{end}}
 
+{{ if .catenary -}}
+// Catenary
+spriteset({{.id}}_catenary, "sheets_1x/catenary_8bpp.png") {
+    tmpl_catenary(1)
+}
+
+alternative_sprites({{.id}}_catenary, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/catenary_32bpp.png") {
+    tmpl_catenary(1)
+}
+
+alternative_sprites({{.id}}_catenary, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/catenary_8bpp.png") {
+    tmpl_catenary(2)
+}
+
+alternative_sprites({{.id}}_catenary, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2x/catenary_32bpp.png") {
+    tmpl_catenary(2)
+}
+
+// Pylon
+spriteset({{.id}}_pylon, "sheets_1x/pylon_8bpp.png") {
+    tmpl_pylon(1)
+}
+
+alternative_sprites({{.id}}_pylon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/pylon_32bpp.png") {
+    tmpl_pylon(1)
+}
+
+alternative_sprites({{.id}}_pylon, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/pylon_8bpp.png") {
+    tmpl_pylon(2)
+}
+
+alternative_sprites({{.id}}_pylon, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2x/pylon_32bpp.png") {
+    tmpl_pylon(2)
+}
+{{- end}}
 
 // GUI not implemented
 //spriteset(gui_normal, "UNK") {
@@ -84,17 +121,32 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         // TODO: proper introduction logic
         introduction_date: date(1800,1,1);
 
+        {{if .catenary -}}
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+        {{end}}
+
         name: {{.name_string}};
         menu_text: string(STR_MENU_{{.rail_type_label}});
         toolbar_caption: string(STR_TOOLBAR_{{.rail_type_label}});
     }
 
     graphics {
+        {{if .catenary -}}
+        track_overlay: rail_overlays;
+        underlay: rail_underlays;
+        level_crossings: {{.level_crossing_type}}_level_crossing_switch;
+        tunnels: rail_tunnel_overlays;
+        bridge_surfaces: rail_bridge_underlay;
+
+        catenary_wire: {{.id}}_catenary;
+        catenary_pylons: {{.id}}_pylon;
+        {{- else -}}
         track_overlay: {{.id}}_overlays;
         underlay: {{.id}}_underlays;
         level_crossings: {{.level_crossing_type}}_level_crossing_switch;
         tunnels: {{.id}}_tunnel_overlays;
-        bridge_surfaces: {{.id}}_bridge_underlay;
+        bridge_surfaces: {{.id}}_bridge_underlay;        
+        {{- end}}
 
         // not yet implemented
         //depots: depot_normal_rail;

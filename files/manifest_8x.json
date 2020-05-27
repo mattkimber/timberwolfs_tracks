@@ -3,6 +3,7 @@
     "lighting_elevation": 65,
     "depth_influence": 0,
     "tiled_normals": true,
+    "soften_edges": true,
     "size": {
       "x": 128,
       "y": 128,

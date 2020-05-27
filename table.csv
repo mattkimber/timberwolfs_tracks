@@ -1,19 +1,20 @@
-name,id,numeric_id,template,rail_type_label,level_crossing_type
-Historic Level Crossing,lc_historic,0,level_crossing,,
-Old Level Crossing,lc_old,0,level_crossing,,
-Modern Level Crossing,lc_modern,0,level_crossing,,
-Plateway Level Crossing,lc_plateway,0,level_crossing,,
-Narrow Gauge Level Crossing,lc_ngrl,0,level_crossing,,
-Level Crossing Decider,lc_decider,0,level_crossing_switch,,
-Early Wooden Fences,fence_early,0,fence,,
-Wooden Fences,fence_wooden,0,fence,,
-Railings,fence_railings,0,fence,,
-Mesh Fence,fence_mesh,0,fence,,
-Chain Fence,fence_chain,0,fence,,
-Bar Fence,fence_bars,0,fence,,
-Fence Decider,fence_decider,0,fence_switches,,
-Plateway,ptwy,1,railtype,PTWY,lc_plateway
-Railway,rail,2,railtype,RAIL,auto
-3rd Rail Electric,tdrl,3,railtype,3RDR,auto
-4th Rail Electric,f_rl,4,railtype,MTRO,auto
-Narrow Gauge Railway,ngrl,5,railtype,NGRL,lc_ngrl
+name,id,numeric_id,template,rail_type_label,level_crossing_type,catenary
+Historic Level Crossing,lc_historic,0,level_crossing,,,
+Old Level Crossing,lc_old,0,level_crossing,,,
+Modern Level Crossing,lc_modern,0,level_crossing,,,
+Plateway Level Crossing,lc_plateway,0,level_crossing,,,
+Narrow Gauge Level Crossing,lc_ngrl,0,level_crossing,,,
+Level Crossing Decider,lc_decider,0,level_crossing_switch,,,
+Early Wooden Fences,fence_early,0,fence,,,
+Wooden Fences,fence_wooden,0,fence,,,
+Railings,fence_railings,0,fence,,,
+Mesh Fence,fence_mesh,0,fence,,,
+Chain Fence,fence_chain,0,fence,,,
+Bar Fence,fence_bars,0,fence,,,
+Fence Decider,fence_decider,0,fence_switches,,,
+Plateway,ptwy,1,railtype,PTWY,lc_plateway,
+Railway,rail,2,railtype,RAIL,auto,
+Overhead Electric,elrl,3,railtype,BRLL,auto,catenary
+3rd Rail Electric,tdrl,4,railtype,3RDR,auto,
+4th Rail Electric,f_rl,5,railtype,MTRO,auto,
+Narrow Gauge Railway,ngrl,6,railtype,NGRL,lc_ngrl,

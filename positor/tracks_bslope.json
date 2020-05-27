@@ -10,7 +10,10 @@
         "../voxels/fence_railings.vox",
         "../voxels/fence_mesh.vox",
         "../voxels/fence_chain.vox",
-        "../voxels/fence_bars.vox"
+        "../voxels/fence_bars.vox",
+        "../voxels/catenary_narrow.vox",
+        "../voxels/catenary_wide_1.vox",
+        "../voxels/catenary_wide_2.vox"
     ],
     "operations": [
 		{  

@@ -16,7 +16,9 @@
         "fence_mesh",
         "fence_early",
         "fence_chain",
-        "fence_bars"
+        "fence_bars",
+        "catenary",
+        "pylon"
     ],
 	"suffixes": [
 		"32bpp",

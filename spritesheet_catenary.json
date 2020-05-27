@@ -1,0 +1,11 @@
+[
+  {
+    "prefixes": [
+        "catenary"
+    ],
+	"suffixes": [
+		"32bpp",
+		"8bpp"
+		]
+  }
+]

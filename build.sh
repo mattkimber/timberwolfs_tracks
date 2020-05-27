@@ -68,6 +68,11 @@ cp voxels/lc_historic_closed.vox intermediate/8/lc_ngrl_closed.vox
 #mkdir -p intermediate/pieces
 #cp voxels/tracks_2_level_crossing_pieces.vox intermediate/4/tracks_2_z_lc.vox
 
+# Move catenary away from 4f sprites
+mv intermediate/4f/catenary_narrow_slope_4f.vox intermediate/catenary_narrow_hill.vox
+mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hill.vox
+mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
+
 for i in `ls intermediate/1`; do 
     echo "$i"
 	../gorender/renderobject.exe -i intermediate/1/$i -o $i -s 1,2 -u -m files/manifest_1x.json
@@ -98,6 +103,20 @@ for i in `ls intermediate/fences`; do
     echo "$i"
 	../gorender/renderobject.exe -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
 done
+
+# Catenary
+../gorender/renderobject.exe -i voxels/catenary_narrow.vox -o catenary_narrow -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe -i intermediate/catenary_narrow_hill.vox -o catenary_narrow_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+
+../gorender/renderobject.exe -i voxels/catenary_wide_1.vox -o catenary_wide_1 -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe -i intermediate/catenary_wide_1_hill.vox -o catenary_wide_1_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+../gorender/renderobject.exe -i voxels/catenary_wide_2.vox -o catenary_wide_2 -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe -i intermediate/catenary_wide_2_hill.vox -o catenary_wide_2_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+
+../gorender/renderobject.exe -i voxels/catenary_tunnel.vox -o catenary_x_tunnel -s 1,2 -u -m files/manifest_catenary_tunnel.json
+
+# Catenary pylon
+../gorender/renderobject.exe -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
 
 # Remove mask files for now
