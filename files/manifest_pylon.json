@@ -1,7 +1,7 @@
 {
     "lighting_angle": 60,
     "lighting_elevation": 65,
-    "depth_influence": 0,
+    "depth_influence": 0.1,
     "tiled_normals": true,
     "soften_edges": true,
     "size": {

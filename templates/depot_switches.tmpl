@@ -1,0 +1,7 @@
+
+// Pick depot by year
+switch(FEAT_RAILTYPES, SELF, depot_switch, build_date) {
+    0..date(1920,5,5): spriteset_depot_1880;
+    date(1931,9,14)..date(1937,8,5): spriteset_depot_1930;
+    spriteset_depot_1920;
+}

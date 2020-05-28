@@ -1,9 +1,17 @@
 
+spriteset(spriteset_{{.id}}, "sheets_1x/{{.id}}_8bpp.png") {
+    tmpl_depot(1)
+}
 
-//spriteset(depot_normal_rail, "gfx/depot_normal.png") {
-//    tmpl_depot()
-//}
-//spriteset(depot_electric_rail, "gfx/depot_electric.png") {
-//    tmpl_depot()
-//}
+alternative_sprites(spriteset_{{.id}}, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "sheets_1x/{{.id}}_32bpp.png", "sheets_1x/{{.id}}_mask.png") {
+    tmpl_depot(1)
+}
+
+alternative_sprites(spriteset_{{.id}}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.id}}_8bpp.png") {
+    tmpl_depot(2)
+}
+
+alternative_sprites(spriteset_{{.id}}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2x/{{.id}}_32bpp.png", "sheets_2x/{{.id}}_mask.png") {
+    tmpl_depot(2)
+}
 

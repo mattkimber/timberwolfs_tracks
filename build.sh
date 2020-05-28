@@ -19,7 +19,6 @@ mkdir -p intermediate
 ../cargopositor/cargopositor.exe -o intermediate -v voxels positor/tracks_bslope.json
 ../cargopositor/cargopositor.exe -o intermediate -v voxels positor/diagonals.json
 
-
 # Level crossings
 cp intermediate/ptwy_ballasted_2.vox intermediate/lc_plateway_track.vox
 cp intermediate/rail_ballasted_2.vox intermediate/lc_modern_track.vox
@@ -34,6 +33,10 @@ cp intermediate/ngrl_ballasted_2.vox intermediate/lc_ngrl_track.vox
 ../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/clip.json
 ../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/clip_rev.json
 
+# Depots
+../cargopositor/cargopositor.exe -o intermediate -v voxels positor/depots.json
+
+
 #../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/fours.json
 #../cargopositor/cargopositor.exe -o intermediate -v intermediate positor/ones.json
 
@@ -44,11 +47,18 @@ mkdir -p intermediate/4
 mkdir -p intermediate/4f
 mkdir -p intermediate/8
 mkdir -p intermediate/fences
+mkdir -p intermediate/depots
 
 mv intermediate/*_1.vox intermediate/1
 mv intermediate/*_2.vox intermediate/2
 mv intermediate/*_4f.vox intermediate/4f
 mv intermediate/*_4.vox intermediate/4
+
+mv intermediate/*_depot_a.vox intermediate/depots
+mv intermediate/*_depot_b.vox intermediate/depots
+mv intermediate/*_depot_c.vox intermediate/depots
+mv intermediate/*_depot_d.vox intermediate/depots
+mv intermediate/*_depot_e.vox intermediate/depots
 
 # Level crossing sprites
 cp voxels/lc*open.vox intermediate/8
@@ -104,6 +114,12 @@ for i in `ls intermediate/fences`; do
 	../gorender/renderobject.exe -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
 done
 
+# Depots
+for i in `ls intermediate/depots`; do 
+    echo "$i"
+	../gorender/renderobject.exe -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
+done
+
 # Catenary
 ../gorender/renderobject.exe -i voxels/catenary_narrow.vox -o catenary_narrow -s 1,2 -u -m files/manifest_catenary_4.json
 ../gorender/renderobject.exe -i intermediate/catenary_narrow_hill.vox -o catenary_narrow_hill -s 1,2 -u -m files/manifest_catenary_hill.json
@@ -118,10 +134,6 @@ done
 # Catenary pylon
 ../gorender/renderobject.exe -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
-# Depot
-../gorender/renderobject.exe -i voxels/depot.vox -o depot -s 1,2 -u -m files/manifest_depot.json
-
-
 # Remove mask files for now
 #../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4 -k files/mask_1x.png
 #../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet.json -m 8 -k files/mask_2x.png
@@ -134,3 +146,4 @@ mkdir -p sheets_2x
 
 # Assemble the output using Roadie
 ../roadie/roadie.exe set.json
+

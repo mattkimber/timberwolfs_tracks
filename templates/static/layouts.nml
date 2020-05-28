@@ -62,15 +62,15 @@ template tmpl_tunnel_tracks(m) {
     tmpl_straight_y_m(0, m)
 }
 
-// Depots (not implemented)
-//template tmpl_depot() {
-//    [200, 10, 16,  8,  17,   7]
-//    [118,  8, 64, 47,  -9, -31]
-//    [  0, 10, 16,  8, -31,   7]
-//    [ 37,  8, 64, 47, -53, -31]
-//    [ 37, 63, 64, 47, -53, -31]
-//    [118, 63, 64, 47,  -9, -31]
-//}
+// Depots
+template tmpl_depot(m) {
+    [93*m,  243*m, 15*m,  13*m,  10*m,    2*m ] // \ rear wall
+    [58*m,  168*m, 50*m,  44*m,  -3*m,  -30*m ] // \ (front open)
+    [116*m, 81*m,  16*m,  13*m, -23*m,    1*m ] // / rear wall
+    [116*m, 114*m, 50*m,  44*m, -45*m,  -30*m ] // / (front open)
+    [0*m,   6*m,   50*m,  44*m, -47*m,  -29*m ] // / (rear)
+    [174*m, 6*m,   50*m,  44*m,  -2*m,  -29*m ] // \ (rear)
+}
 
 
 // GUI

@@ -1,0 +1,33 @@
+{
+    "files": [
+        "depot_1880.vox",
+        "depot_1920.vox",
+        "depot_1930.vox"
+    ],
+    "operations": [
+        {
+          "name": "_depot_a",
+          "type": "produce_empty"
+        },        
+        {
+            "name": "_depot_b",
+            "type": "clip",
+            "file": "depot_clip.vox"
+        },
+        {
+            "name": "_depot_c",
+            "type": "remove",
+            "file": "depot_clip.vox"
+        },
+        {
+            "name": "_depot_d",
+            "type": "remove",
+            "file": "depot_clip_b.vox"
+        },
+        {
+            "name": "_depot_e",
+            "type": "clip",
+            "file": "depot_clip_b.vox"
+        } 
+    ]
+}      
