@@ -118,6 +118,9 @@ done
 # Catenary pylon
 ../gorender/renderobject.exe -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
+# Depot
+../gorender/renderobject.exe -i voxels/depot.vox -o depot -s 1,2 -u -m files/manifest_depot.json
+
 
 # Remove mask files for now
 #../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4 -k files/mask_1x.png
