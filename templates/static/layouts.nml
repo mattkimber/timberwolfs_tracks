@@ -46,7 +46,7 @@ template tmpl_underlay_railtypes(m) {
 template tmpl_overlay_railtypes(m) {
     tmpl_straight_y_m(172, m)
     tmpl_diagonal_y_m(258, m)
-    //tmpl_slope_y_m(86,m)
+    tmpl_slope_y_m(86,m)
 }
 
 // Bridges

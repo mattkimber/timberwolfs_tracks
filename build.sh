@@ -85,54 +85,54 @@ mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hil
 
 for i in `ls intermediate/1`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/1/$i -o $i -s 1,2 -u -m files/manifest_1x.json
+	../gorender/renderobject.exe $1 -i intermediate/1/$i -o $i -s 1,2 -u -m files/manifest_1x.json
 done
 
 for i in `ls intermediate/2`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/2/$i -o $i -s 1,2 -u -m files/manifest_2x.json
+	../gorender/renderobject.exe $1 -i intermediate/2/$i -o $i -s 1,2 -u -m files/manifest_2x.json
 done
 
 for i in `ls intermediate/4`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/4/$i -o $i -s 1,2 -u -m files/manifest_4x.json
+	../gorender/renderobject.exe $1 -i intermediate/4/$i -o $i -s 1,2 -u -m files/manifest_4x.json
 done
 
 for i in `ls intermediate/4f`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/4f/$i -o $i -s 1,2 -u -m files/manifest_4x_f.json
+	../gorender/renderobject.exe $1 -i intermediate/4f/$i -o $i -s 1,2 -u -m files/manifest_4x_f.json
 done
 
 for i in `ls intermediate/8`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/8/$i -o $i -s 1,2 -u -m files/manifest_8x.json
+	../gorender/renderobject.exe $1 -i intermediate/8/$i -o $i -s 1,2 -u -m files/manifest_8x.json
 done
 
 # Fences (fixed, slopes are done by cargopositor and use 4x_f template)
 for i in `ls intermediate/fences`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
+	../gorender/renderobject.exe $1 -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
 done
 
 # Depots
 for i in `ls intermediate/depots`; do 
     echo "$i"
-	../gorender/renderobject.exe -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
+	../gorender/renderobject.exe $1 -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
 done
 
 # Catenary
-../gorender/renderobject.exe -i voxels/catenary_narrow.vox -o catenary_narrow -s 1,2 -u -m files/manifest_catenary_4.json
-../gorender/renderobject.exe -i intermediate/catenary_narrow_hill.vox -o catenary_narrow_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+../gorender/renderobject.exe $1 -i voxels/catenary_narrow.vox -o catenary_narrow -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe $1 -i intermediate/catenary_narrow_hill.vox -o catenary_narrow_hill -s 1,2 -u -m files/manifest_catenary_hill.json
 
-../gorender/renderobject.exe -i voxels/catenary_wide_1.vox -o catenary_wide_1 -s 1,2 -u -m files/manifest_catenary_4.json
-../gorender/renderobject.exe -i intermediate/catenary_wide_1_hill.vox -o catenary_wide_1_hill -s 1,2 -u -m files/manifest_catenary_hill.json
-../gorender/renderobject.exe -i voxels/catenary_wide_2.vox -o catenary_wide_2 -s 1,2 -u -m files/manifest_catenary_4.json
-../gorender/renderobject.exe -i intermediate/catenary_wide_2_hill.vox -o catenary_wide_2_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+../gorender/renderobject.exe $1 -i voxels/catenary_wide_1.vox -o catenary_wide_1 -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe $1 -i intermediate/catenary_wide_1_hill.vox -o catenary_wide_1_hill -s 1,2 -u -m files/manifest_catenary_hill.json
+../gorender/renderobject.exe $1 -i voxels/catenary_wide_2.vox -o catenary_wide_2 -s 1,2 -u -m files/manifest_catenary_4.json
+../gorender/renderobject.exe $1 -i intermediate/catenary_wide_2_hill.vox -o catenary_wide_2_hill -s 1,2 -u -m files/manifest_catenary_hill.json
 
-../gorender/renderobject.exe -i voxels/catenary_tunnel.vox -o catenary_x_tunnel -s 1,2 -u -m files/manifest_catenary_tunnel.json
+../gorender/renderobject.exe $1 -i voxels/catenary_tunnel.vox -o catenary_x_tunnel -s 1,2 -u -m files/manifest_catenary_tunnel.json
 
 # Catenary pylon
-../gorender/renderobject.exe -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
+../gorender/renderobject.exe $1 -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
 # Remove mask files for now
 #../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4 -k files/mask_1x.png

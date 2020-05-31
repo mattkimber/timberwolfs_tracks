@@ -19,11 +19,17 @@
         "fence_bars",
         "catenary",
         "pylon",
+        "depot_1800",
+        "depot_1850",
         "depot_1880",
-        "depot_1920",
+        "depot_1905",
         "depot_1930",
         "depot_1940",
-        "depot_1950"
+        "depot_1950",
+        "depot_1970",
+        "depot_2000",
+        "depot_ng_1800",
+        "depot_ng_1890"
     ],
 	"suffixes": [
 		"32bpp",

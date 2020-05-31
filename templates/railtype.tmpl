@@ -149,7 +149,7 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         {{- end}}
 
         // not yet implemented
-        depots: depot_switch;
+        depots: {{.depot_type}}_switch;
         fences: {{.id}}_fence_switch;
         //gui: gui_normal;        
     }

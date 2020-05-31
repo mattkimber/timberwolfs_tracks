@@ -1,10 +1,16 @@
 {
     "files": [
+        "depot_1800.vox",
+        "depot_1850.vox",
         "depot_1880.vox",
-        "depot_1920.vox",
+        "depot_1905.vox",
         "depot_1930.vox",
         "depot_1940.vox",
-        "depot_1950.vox"
+        "depot_1950.vox",
+        "depot_1970.vox",
+        "depot_2000.vox",
+        "depot_ng_1800.vox",
+        "depot_ng_1890.vox"
     ],
     "operations": [
         {
