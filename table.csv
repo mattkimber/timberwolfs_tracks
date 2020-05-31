@@ -26,7 +26,7 @@ Fence Decider,fence_decider,0,fence_switches,,,,
 Depot Decider,depot_decider,0,depot_switches,,,,
 Plateway,ptwy,1,railtype,PTWY,lc_plateway,,depot
 Railway,rail,2,railtype,RAIL,auto,,depot
-Overhead Electric,elrl,3,railtype,BRLL,auto,catenary,depot
-3rd Rail Electric,tdrl,4,railtype,3RDR,auto,,depot
-4th Rail Electric,f_rl,5,railtype,MTRO,auto,,depot
+25kV AC Overhead Electric,elrl,3,railtype,ELRL,auto,catenary,depot
+750V DC 3rd Rail Electric,tdrl,4,railtype,3RDR,auto,,depot
+630V DC 4th Rail Electric,f_rl,5,railtype,MTRO,auto,,depot
 Narrow Gauge Railway,ngrl,6,railtype,NGRL,lc_ngrl,,ng_depot

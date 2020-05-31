@@ -103,11 +103,15 @@ alternative_sprites({{.id}}_pylon, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2
 }
 {{- end}}
 
-// GUI not implemented
-//spriteset(gui_normal, "UNK") {
-//    tmpl_gui()
-//}
+// GUI
+spriteset({{.id}}_gui, "gui/gui_{{.id}}_8bpp.png") {
+    tmpl_gui()
+}
 
+
+alternative_sprites({{.id}}_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "gui/gui_{{.id}}_32bpp.png") {
+    tmpl_gui()
+}
 
 // Railtype defs
 item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
@@ -148,9 +152,8 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         bridge_surfaces: {{.id}}_bridge_underlay;        
         {{- end}}
 
-        // not yet implemented
         depots: {{.depot_type}}_switch;
         fences: {{.id}}_fence_switch;
-        //gui: gui_normal;        
+        gui: {{.id}}_gui;        
     }
 }
