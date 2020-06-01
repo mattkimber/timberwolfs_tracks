@@ -174,7 +174,6 @@ template tmpl_catenary(m) {
 
 // Catenary pylons
 template tmpl_pylon(m) {
-
     [ 197*m, 7*m, 11*m, 18*m,  -6*m, -14*m ] // 1  // offset
     [ 445*m, 4*m, 11*m, 21*m,  -4*m, -19*m ] // 2  // offset
     [ 79*m, 7*m, 11*m,  18*m,  -1*m, -14*m ] // 3  // offset
@@ -183,5 +182,19 @@ template tmpl_pylon(m) {
     [ 385*m, 0*m, 5*m,  19*m,  -1*m, -18*m ] // 6  // offset
     [ 19*m, 2*m, 12*m,  17*m,  -2*m, -12*m ] // 7  // offset
     [ 256*m, 2*m, 12*m, 18*m,  -9*m, -14*m ] // 8  // offset
+}
 
+// Line of signals
+template tmpl_signals(y, m) {
+    [ 140*m,  (y+0)*m, 23*m, 36*m, -11*m, -28*m ] // 1 (img 6)
+    [ 26*m,  (y+0)*m, 23*m, 36*m, -11*m, -28*m ] // 2 (img 2)
+
+    [ 197*m,  (y+0)*m, 23*m, 36*m, -11*m, -28*m ] // 3 (img 8)
+    [ 83*m,  (y+0)*m, 23*m, 36*m, -11*m, -28*m ] // 4 (img 4)
+
+    [ 57*m,   (y+0)*m, 18*m, 32*m, -9*m,  -26*m ] // 5 (img 3)
+    [ 171*m,   (y+0)*m, 18*m, 32*m, -9*m,  -26*m ] // 6 (img 7)
+
+    [ 114*m,   (y+0)*m, 18*m, 32*m, -6*m,  -27*m ] // 7 (img 5)
+    [ 0*m,   (y+0)*m, 18*m, 32*m, -9*m,  -27*m ] // 8 (img 1)
 }

@@ -24,6 +24,8 @@ Fence Decider,fence_decider,0,fence_switches,,,,
 1800 NG Depot,depot_ng_1800,0,depot,,,,
 1890 NG Depot,depot_ng_1890,0,depot,,,,
 Depot Decider,depot_decider,0,depot_switches,,,,
+Semaphore Signals,semaphore,0,signals,,,,
+Signal Decider,signal_decider,0,signal_switches,,,,
 Plateway,ptwy,1,railtype,PTWY,lc_plateway,,depot
 Railway,rail,2,railtype,RAIL,auto,,depot
 25kV AC Overhead Electric,elrl,3,railtype,ELRL,auto,catenary,depot

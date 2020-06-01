@@ -83,6 +83,13 @@ mv intermediate/4f/catenary_narrow_slope_4f.vox intermediate/catenary_narrow_hil
 mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hill.vox
 mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
 
+# Signals
+for i in `ls voxels/signals`; do
+    echo "$i"
+	../gorender/renderobject.exe $1 -i voxels/signals/$i -o $i -s 1,2 -u -m files/manifest_signal.json
+done
+
+# General
 for i in `ls intermediate/1`; do 
     echo "$i"
 	../gorender/renderobject.exe $1 -i intermediate/1/$i -o $i -s 1,2 -u -m files/manifest_1x.json
@@ -116,8 +123,14 @@ done
 
 # Depots
 for i in `ls intermediate/depots`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
+    fn=`echo 2x/${i}_32bpp.png | sed -e s/.vox//`
+
+    if [ -e $fn ]; then 
+        echo "$i [cached]"
+    else
+        echo "$i [new]"
+	    ../gorender/renderobject.exe $1 -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
+    fi
 done
 
 # GUI

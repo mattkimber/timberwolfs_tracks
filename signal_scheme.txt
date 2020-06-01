@@ -1,0 +1,27 @@
+Signal scheme:
+
+Block: red
+Entry: yellow
+Combo: red + yellow
+Exit: red + red
+
+Path: --| --|
+        |   |
+         \ /
+          |
+
+Path (one way): as path, with board
+
+
+
+Colour
+
+Block: 4 light
+Entry: 4 light (single yellow) 
+Combo: 4 light (double yellow)
+Exit:  4 light
+
+Path: 4 light + direction indicator
+Path/1way: 4 light + direction indicator + board
+
+(4th rail/light rail use 2 light signals)

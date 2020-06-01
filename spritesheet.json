@@ -29,7 +29,8 @@
         "depot_1970",
         "depot_2000",
         "depot_ng_1800",
-        "depot_ng_1890"
+        "depot_ng_1890",
+        "semaphore"
     ],
 	"suffixes": [
 		"32bpp",

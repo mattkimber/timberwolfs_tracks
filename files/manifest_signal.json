@@ -1,0 +1,58 @@
+{
+    "lighting_angle": 60,
+    "lighting_elevation": 65,
+    "depth_influence": 0.1,
+    "tiled_normals": true,
+    "soften_edges": 0.5,
+    "sampler": "disc",
+    "accuracy": 3,
+    "overlap": -0.1,
+    "size": {
+      "x": 96,
+      "y": 96,
+      "z": 130
+    },
+    "render_elevation": 30,
+    "sprites": [
+      { 
+        "angle": 0,
+        "width": 18,
+        "height": 32
+      },
+      { 
+        "angle": 45,
+        "width": 23,
+        "height": 36
+      },      
+      { 
+        "angle": 90,
+        "width": 18,
+        "height": 32
+      },
+      { 
+        "angle": 135,
+        "width": 23,
+        "height": 36
+      },      
+      { 
+        "angle": 180,
+        "width": 18,
+        "height": 32
+      },
+      { 
+        "angle": 235,
+        "width": 23,
+        "height": 36
+      },
+      { 
+        "angle": 270,
+        "width": 18,
+        "height": 32
+      },
+      { 
+        "angle": 315,
+        "width": 23,
+        "height": 36
+      }
+    ]
+  }
