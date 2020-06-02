@@ -83,55 +83,36 @@ mv intermediate/4f/catenary_narrow_slope_4f.vox intermediate/catenary_narrow_hil
 mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hill.vox
 mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
 
+function render {
+
+    for i in `ls $2`; do
+        fn=`echo 2x/${i}_32bpp.png | sed -e s/.vox//`
+
+        if [ -e $fn ]; then 
+            echo "$i [cached]"
+        else
+            echo "$i"
+	        ../gorender/renderobject.exe $1 -i $2/$i -o $i -s 1,2 -u -m files/manifest_$3.json
+        fi
+    done
+
+}
+
 # Signals
-for i in `ls voxels/signals`; do
-    echo "$i"
-	../gorender/renderobject.exe $1 -i voxels/signals/$i -o $i -s 1,2 -u -m files/manifest_signal.json
-done
+render "$1" voxels/signals signal
 
 # General
-for i in `ls intermediate/1`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/1/$i -o $i -s 1,2 -u -m files/manifest_1x.json
-done
-
-for i in `ls intermediate/2`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/2/$i -o $i -s 1,2 -u -m files/manifest_2x.json
-done
-
-for i in `ls intermediate/4`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/4/$i -o $i -s 1,2 -u -m files/manifest_4x.json
-done
-
-for i in `ls intermediate/4f`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/4f/$i -o $i -s 1,2 -u -m files/manifest_4x_f.json
-done
-
-for i in `ls intermediate/8`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/8/$i -o $i -s 1,2 -u -m files/manifest_8x.json
-done
+render "$1" intermediate/1 1x
+render "$1" intermediate/2 2x
+render "$1" intermediate/4 4x
+render "$1" intermediate/4f 4x_f
+render "$1" intermediate/8 8x
 
 # Fences (fixed, slopes are done by cargopositor and use 4x_f template)
-for i in `ls intermediate/fences`; do 
-    echo "$i"
-	../gorender/renderobject.exe $1 -i intermediate/fences/$i -o $i -s 1,2 -u -m files/manifest_fence.json
-done
+render "$1" intermediate/fences fence
 
 # Depots
-for i in `ls intermediate/depots`; do 
-    fn=`echo 2x/${i}_32bpp.png | sed -e s/.vox//`
-
-    if [ -e $fn ]; then 
-        echo "$i [cached]"
-    else
-        echo "$i [new]"
-	    ../gorender/renderobject.exe $1 -i intermediate/depots/$i -o $i -s 1,2 -u -m files/manifest_depot.json
-    fi
-done
+render "$1" intermediate/depots depot
 
 # GUI
 mkdir -p gui
@@ -139,7 +120,6 @@ mkdir -p gui
 # Depot GUI
 ../gorender/renderobject.exe $1 -i voxels/depot_1880.vox -o gui/depot -s 1 -m files/manifest_gui.json
 ../gorender/renderobject.exe $1 -i voxels/depot_ng_1890.vox -o gui/depot_ng -s 1 -m files/manifest_gui.json
-
 
 # Rail types
 for i in rail elrl tdrl f_rl ngrl ptwy; do
