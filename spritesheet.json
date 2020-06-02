@@ -30,7 +30,8 @@
         "depot_2000",
         "depot_ng_1800",
         "depot_ng_1890",
-        "semaphore"
+        "semaphore",
+        "colour"
     ],
 	"suffixes": [
 		"32bpp",
