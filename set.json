@@ -24,14 +24,14 @@
     "fixed_strings": {
         "STR_MENU_RAIL": "Railway construction",
         "STR_TOOLBAR_RAIL": "Railway Construction",
-        "STR_MENU_3RDR": "750V DC 3rd rail electrified railway construction",
-        "STR_TOOLBAR_3RDR": "750V DC 3rd Rail Electrified Railway Construction",
-        "STR_MENU_MTRO": "630V DC 4th rail electrified railway construction",
-        "STR_TOOLBAR_MTRO": "630V DC 4th Rail Electrified Railway Construction",
-        "STR_MENU_PTWY": "Plateway construction",
-        "STR_TOOLBAR_PTWY": "Plateway Construction",
-        "STR_MENU_NGRL": "Narrow gauge railway construction",
-        "STR_TOOLBAR_NGRL": "Narrow Gauge Railway Construction",
+        "STR_MENU_SAC3": "750V DC 3rd rail electrified railway construction",
+        "STR_TOOLBAR_SAC3": "750V DC 3rd Rail Electrified Railway Construction",
+        "STR_MENU_SAC4": "630V DC 4th rail electrified railway construction",
+        "STR_TOOLBAR_SAC4": "630V DC 4th Rail Electrified Railway Construction",
+        "STR_MENU_SAAN": "Plateway construction",
+        "STR_TOOLBAR_SAAN": "Plateway Construction",
+        "STR_MENU_NAAN": "Narrow gauge railway construction",
+        "STR_TOOLBAR_NAAN": "Narrow Gauge Railway Construction",
         "STR_MENU_ELRL": "25kV AC overhead electrified railway construction",
         "STR_TOOLBAR_ELRL": "25kV AC Overhead Electrified Railway Construction"
     }
