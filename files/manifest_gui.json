@@ -5,8 +5,10 @@
   "tiled_normals": true,
   "soften_edges": 4,
   "sampler": "disc",
-  "accuracy": 5,
+  "accuracy": 7,
   "overlap": -0.33,
+  "brightness": -0.05,
+  "contrast": 0.05,
   "size": {
     "x": 128,
     "y": 128,
