@@ -12,19 +12,19 @@
     "size": {
       "x": 128,
       "y": 128,
-      "z": 20
+      "z": 18
     },
     "render_elevation": 30,
     "sprites": [
       { 
         "angle": 45,
         "width": 64,
-        "height": 39
+        "old_height": 39
       },
       { 
         "angle": 135,
         "width": 64,
-        "height": 39
+        "old_height": 39
       },
       { 
         "angle": 0,

@@ -18,22 +18,22 @@
     { 
       "angle": 45,
       "width": 50,
-      "height": 50
+      "old_height": 50
     },
     { 
       "angle": 135,
       "width": 50,
-      "height": 50
+      "old_height": 50
     },
     { 
       "angle": 225,
       "width": 50,
-      "height": 50
+      "old_height": 50
     },
     { 
       "angle": 315,
       "width": 50,
-      "height": 50
+      "old_height": 50
     }
   ]
 }
