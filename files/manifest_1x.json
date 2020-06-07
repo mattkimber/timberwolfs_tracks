@@ -4,6 +4,7 @@
   "depth_influence": 0,
   "tiled_normals": true,
   "soften_edges": 0.5,
+  "fade_to_black": false,
   "sampler": "disc",
   "accuracy": 5,
   "overlap": 0,
