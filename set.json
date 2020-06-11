@@ -11,6 +11,9 @@
     },
     "static_templates": [
         {
+            "template":  "templates/static/railtypes.nml"
+        },
+        {
           "template":  "templates/static/layouts.nml"
         },
         {
