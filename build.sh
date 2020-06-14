@@ -165,3 +165,5 @@ mkdir -p sheets_2x
 # Assemble the output using Roadie
 ../roadie/roadie.exe set.json
 
+# NML
+../nml/nmlc.exe timberwolfs_tracks.nml

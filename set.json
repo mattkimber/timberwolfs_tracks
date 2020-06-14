@@ -19,7 +19,11 @@
     ],
     "sprites": {
         "table": "table.csv",
-        "template_directory": "templates"
+        "template_directory": "templates",
+        "globals": {
+            "bpp": "8",
+            "track_bpp": "32"
+        }
     },
     "fixed_strings": {
         "STR_MENU_RAIL": "Railway construction",
