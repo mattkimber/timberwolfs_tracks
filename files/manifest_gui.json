@@ -5,6 +5,7 @@
   "tiled_normals": true,
   "soften_edges": 4,
   "sampler": "disc",
+  "fade_to_black": true,
   "accuracy": 7,
   "overlap": -0.33,
   "brightness": -0.05,
