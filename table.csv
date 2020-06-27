@@ -27,9 +27,10 @@ Depot Decider,depot_decider,0,depot_switches,,,,,,,,
 Semaphore Signals,semaphore,0,signals,,,,,,,,
 Colour Signals,colour,0,signals,,,,,,,,
 Signal Decider,signal_decider,0,signal_switches,,,,,,,,
-Plateway,ptwy,1,railtype,SAAN,lc_plateway,,depot,"PTWY,WGWY,LIHT","PTWY,WGWY,RAIL,ELRL,SAAN,SABN,SACN,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR","PTWY,WGWY,RAIL,ELRL,SAAN,SABN,SACN,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR",25
-Railway,rail,2,railtype,RAIL,auto,,depot,"SABN,SACN","SABN,SACN,ELRL,SAAE,SABE,SACE,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR","SABN,SAAN,SACN,ELRL,SAAE,SABE,SACE,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR",
-25kV AC Overhead Electric,elrl,3,railtype,ELRL,auto,catenary,depot,"SAAE,SABE,SACE","SABN,SACN,ELRL,SAAE,SABE,SACE,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR","SABE,SAAE,SACE",
-750V DC 3rd Rail Electric,tdrl,4,railtype,SAC3,auto,,depot,"SAA3,SAB3,TDRL,3RDR,3RDC","SABN,SACN,ELRL,SAAE,SABE,SACE,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR,3RDC,TDRL","3RDL,3RDR,SAA3,SAB3,SAC3,3RDC,TDRL",
-630V DC 4th Rail Electric,f_rl,5,railtype,SAC4,auto,,depot,"MTRO,SAA4,SAB4","SABN,SACN,ELRL,SAAE,SABE,SACE,SAA3,SAB3,SAC3,SAA4,SAB4,SAC4,3RDL,3RDR","MTRO,SAA4,SAB4,SAC4",
-Narrow Gauge Railway,ngrl,6,railtype,NAAN,lc_ngrl,,ng_depot,NGRL,NGRL,NGRL,45
+Plateway,ptwy,1,railtype,PTWY,lc_plateway,,depot,"WGWY,LIHT","PTWY,WGWY,RAIL,ELRL,SAAN,SAA3,SAA4,3RDL,3RDR,DUAL","PTWY,WGWY,RAIL,ELRL,SAAN,SAA3,SAA4,3RDL,3RDR,DUAL",25
+Railway,rail,2,railtype,RAIL,auto,,depot,"SAAN","ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ","SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ",
+25kV AC Overhead Electric,elrl,3,railtype,ELRL,auto,catenary,depot,"SAAE","RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ","ELRL,SAAE,SAAZ",
+750V DC 3rd Rail Electric,tdrl,4,railtype,SAA3,auto,,depot,"TDRL,3RDR,3RDC","RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,3RDC,TDRL,SAAZ","3RDL,3RDR,SAA3,3RDC,TDRL,SAAZ",
+630V DC 4th Rail Electric,f_rl,5,railtype,SAA4,auto,,depot,"MTRO","RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ","MTRO,SAA4,SAB4,SAC4",
+Dual Power (25kV AC/750V DC) Electric,dual,6,dual_power_railtype,SAAZ,auto,catenary,depot,"SAAZ","RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ","ELRL,SAA3,SAAE,SAAZ",
+Narrow Gauge Railway,ngrl,7,railtype,NAAN,lc_ngrl,,ng_depot,NGRL,NGRL,NGRL,45

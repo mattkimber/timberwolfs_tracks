@@ -35,6 +35,14 @@ switch(FEAT_RAILTYPES, SELF, tdrl_fence_switch, current_year) {
     fence_railings_spriteset;
 }
 
+// Dual Power Rail
+switch(FEAT_RAILTYPES, SELF, dual_fence_switch, current_year) {
+    0..1871: fence_early_spriteset;
+    1872..1952: fence_wooden_spriteset;
+    1953..1961: fence_mesh_spriteset;
+    fence_railings_spriteset;
+}
+
 // 4th Rail
 switch(FEAT_RAILTYPES, SELF, f_rl_fence_switch, current_year) {
     0..1871: fence_early_spriteset;

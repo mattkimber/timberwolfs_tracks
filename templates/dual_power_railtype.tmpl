@@ -1,0 +1,54 @@
+// Railtype defs
+item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
+    property {
+        label: "{{.rail_type_label}}"; 
+        
+        compatible_railtype_list: [
+        {{- $compat := slice .compatible_railtypes -}}
+        {{- range $index, $element := $compat -}}
+        {{- if gt $index 0 }},{{end}} "{{$element}}"
+        {{- end}}];
+
+        powered_railtype_list: [
+        {{- $powered := slice .powered_railtypes -}}
+        {{- range $index, $element := $powered -}}
+        {{- if gt $index 0 }},{{end}} "{{$element}}"
+        {{- end}}];
+
+        alternative_railtype_list: [
+        {{- $alt := slice .alternative_railtypes -}}
+        {{- range $index, $element := $alt -}}
+        {{- if gt $index 0 }},{{end}} "{{$element}}"
+        {{- end}}];
+             
+        // TODO: proper introduction logic
+        introduction_date: date(1970,1,1);
+
+        {{if .speed_limit}}speed_limit: {{.speed_limit}} mph; {{end}}
+
+        {{if .catenary -}}
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+        {{end}}
+
+        name: {{.name_string}};
+        menu_text: string(STR_MENU_{{.rail_type_label}});
+        toolbar_caption: string(STR_TOOLBAR_{{.rail_type_label}});
+    }
+
+    graphics {
+        track_overlay: tdrl_overlays;
+        underlay: tdrl_underlays;
+        level_crossings: {{.level_crossing_type}}_level_crossing_switch;
+        tunnels: tdrl_tunnel_overlays;
+        bridge_surfaces: tdrl_bridge_underlay;
+
+        catenary_wire: elrl_catenary;
+        catenary_pylons: elrl_pylon;
+
+        depots: {{.depot_type}}_switch;
+        fences: dual_fence_switch;
+        gui: tdrl_gui;      
+
+        signals: switch_default_signals;  
+    }
+}
