@@ -6,7 +6,7 @@
   "soften_edges": 4,
   "sampler": "disc",
   "fade_to_black": true,
-  "accuracy": 7,
+  "accuracy": 11,
   "overlap": -0.33,
   "brightness": -0.05,
   "contrast": 0.05,
