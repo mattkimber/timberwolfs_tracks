@@ -162,6 +162,10 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         {{end}}
 
+        construction_cost: {{.construction_cost}};
+        maintenance_cost: {{.maintenance_cost}};
+        
+        sort_order: {{.sort_order}};
         name: {{.name_string}};
         menu_text: string(STR_MENU_{{.rail_type_label}});
         toolbar_caption: string(STR_TOOLBAR_{{.rail_type_label}});
