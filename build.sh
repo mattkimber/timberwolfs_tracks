@@ -83,6 +83,10 @@ mv intermediate/4f/catenary_narrow_slope_4f.vox intermediate/catenary_narrow_hil
 mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hill.vox
 mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
 
+# Overrides
+cp overrides/* -r intermediate/
+
+
 function render {
 
     for i in `ls $2`; do
