@@ -19,7 +19,8 @@
   "sprites": [
     { "angle": 45,
       "width": 64,
-      "old_height": 39
+      "offset_x": 1,
+      "offset_y": -1
     }
   ]
 }

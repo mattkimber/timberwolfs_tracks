@@ -10,8 +10,8 @@
     "brightness": -0.05,
     "contrast": 0.05,
     "size": {
-      "x": 256,
-      "y": 256,
+      "x": 255,
+      "y": 255,
       "z": 36
     },
     "render_elevation": 30,

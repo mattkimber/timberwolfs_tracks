@@ -1,0 +1,16 @@
+[
+  {
+    "prefixes": [
+        "rail", 
+        "tdrl",
+        "f_rl",
+        "ngrl",
+        "ptwy"
+    ],
+	"suffixes": [
+		"32bpp",
+		"8bpp",
+		"mask"
+		]
+  }
+]

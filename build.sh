@@ -157,8 +157,8 @@ done
 ../gorender/renderobject.exe $1 -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
 # Remove mask files for now
-#../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4 -k files/mask_1x.png
-#../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet.json -m 8 -k files/mask_2x.png
+../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet_masked.json -m 4 -k files/mask_1x.png
+../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet_masked.json -m 8 -k files/mask_2x.png
 
 mkdir -p sheets_1x
 mkdir -p sheets_2x

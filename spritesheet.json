@@ -1,16 +1,11 @@
 [
   {
     "prefixes": [
-        "rail", 
-        "tdrl",
-        "f_rl",
-        "ngrl",
         "lc_historic",
         "lc_modern",
         "lc_old",
         "lc_plateway",
         "lc_ngrl",
-        "ptwy",
         "fence_wooden",
         "fence_railings",
         "fence_mesh",
