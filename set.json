@@ -2,8 +2,8 @@
     "grf": {
         "author_id": "TWF",
         "grf_id": 6,
-        "name": "Timberwolf's Tracks (0.1.1-alpha)",
-        "description": "2x zoom track set featuring multiple rail types. Intended for use with Timberwolf's UK Trains. Currently playable.",
+        "name": "Timberwolf's Tracks 1.0.0",
+        "description": "A 2x zoom track set featuring multiple rail types. Intended for use with Timberwolf's UK Trains.",
         "min_compat_version": 1,
         "filename": "timberwolfs_tracks.nml",
         "language": "english", 
