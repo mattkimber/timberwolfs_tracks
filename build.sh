@@ -156,7 +156,8 @@ done
 # Catenary pylon
 ../gorender/renderobject.exe $1 -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
-
+# Sprite Overrides for 2x
+cp override_sprites/2x/* 2x/
 
 mkdir -p sheets_1x
 mkdir -p sheets_2x
