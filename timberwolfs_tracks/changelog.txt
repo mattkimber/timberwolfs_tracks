@@ -1,4 +1,0 @@
-v1.0.0
-------
-
-Initial release with multiple track types in 2x zoom and 32bpp.
