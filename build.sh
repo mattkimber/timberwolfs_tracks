@@ -84,7 +84,7 @@ mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hil
 mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
 
 # Overrides
-cp overrides/* -r intermediate/
+#cp overrides/* -r intermediate/
 
 
 function render {
@@ -157,7 +157,7 @@ done
 ../gorender/renderobject.exe $1 -i voxels/pylon.vox -o pylon -s 1,2 -u -m files/manifest_pylon.json
 
 # Sprite Overrides for 2x
-cp override_sprites/2x/* 2x/
+#cp override_sprites/2x/* 2x/
 
 mkdir -p sheets_1x
 mkdir -p sheets_2x

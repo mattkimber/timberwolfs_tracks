@@ -1,3 +1,10 @@
+v1.0.2
+------
+
+Improvements to diagonal track alignment.
+Remove grass showing under station platforms.
+Improved tiling of sleepers.
+
 v1.0.1
 ------
 
