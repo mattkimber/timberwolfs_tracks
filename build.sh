@@ -172,7 +172,7 @@ mkdir -p sheets_2x
 ../roadie/roadie.exe set.json
 
 # NML
-../nml/nmlc.exe timberwolfs_tracks.nml
+../nml/nmlc.exe -c timberwolfs_tracks.nml
 
 echo "Building TAR"
 mkdir -p timberwolfs_tracks
