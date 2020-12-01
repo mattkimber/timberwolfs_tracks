@@ -2,9 +2,9 @@
     "grf": {
         "author_id": "TWF",
         "grf_id": 6,
-        "name": "Timberwolf's Tracks 1.0.3",
+        "name": "Timberwolf's Tracks 1.1.0",
         "description": "A 2x zoom track set featuring multiple rail types. Intended for use with Timberwolf's UK Trains.",
-        "min_compat_version": 1,
+        "min_compat_version": 632,
         "filename": "timberwolfs_tracks.nml",
         "language": "english", 
         "parameters": []
@@ -42,6 +42,8 @@
         "STR_MENU_NAAN": "Narrow gauge railway construction",
         "STR_TOOLBAR_NAAN": "Narrow Gauge Railway Construction",
         "STR_MENU_ELRL": "25kV AC overhead electrified railway construction",
-        "STR_TOOLBAR_ELRL": "25kV AC Overhead Electrified Railway Construction"
+        "STR_TOOLBAR_ELRL": "25kV AC Overhead Electrified Railway Construction",
+        "STR_MENU_SAAY": "Dual Power Metro (25kV AC/630V DC) electrified railway construction",
+        "STR_TOOLBAR_SAAY": "Dual Power Metro (25kV AC/630V DC) Electrified Railway Construction"
     }
 }

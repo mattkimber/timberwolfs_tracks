@@ -31,10 +31,18 @@ Track types feature balanced build and running costs.
   gauge rail, but far cheaper than other electrified types.
 - Electrified track is expensive to build and maintain. 750V DC third 
   rail is cheaper than 25kV overhead AC, but (depending on train set) 
-typically has slower and less powerful trains available.
+  typically has slower and less powerful trains available.
 - Dual power track allows both 750V DC and 25kV AC locomotives to run, 
   but is extremely expensive to build and maintain, so must be used
   sparingly.
+- 630V DC Rail track is a lower speed, lower cost track for metro
+  services. Third rail trains can also run on this track type, although
+  at a restricted top speed.
+- Metro Dual power track allows 630V metro trains, 750V third rail trains
+  and 25kV AC locomotives to be powered on the same track. It has a
+  restrictive top speed and prohibitively expensive build and maintenance
+  costs, so should be used sparingly only for critical routes in
+  constricted spaces.
 
 
 CC/Attributions
