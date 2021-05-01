@@ -1,3 +1,8 @@
+v1.1.3
+------
+
+Better rendering of 1x zoom sprites.
+
 v1.0.2
 ------
 

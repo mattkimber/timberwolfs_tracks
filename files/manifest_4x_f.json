@@ -5,9 +5,9 @@
   "tiled_normals": true,
   "soften_edges": 0.5,
   "fade_to_black": false,
-  "sampler": "disc",
+  "sampler": "square",
   "accuracy": 11,
-  "overlap": 0,
+  "overlap": -0.1,
   "brightness": -0.05,
   "contrast": 0.05,
   "size": {
