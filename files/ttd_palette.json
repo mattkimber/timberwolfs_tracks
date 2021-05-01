@@ -152,9 +152,10 @@
       "end": 214
     },
     {
-      "_comment": "reserved",
+      "_comment": "process pink",
       "start": 215,
-      "end": 226
+      "end": 226,
+      "is_process_colour": true
     },
     {
       "_comment": "block cycle",
@@ -185,8 +186,14 @@
     {
       "_comment": "water cycle",
       "start": 245,
-      "end": 254,
+      "end": 251,
       "is_animated_light": true
+    },
+    {
+      "_comment": "transparent voxels",
+      "start": 252,
+      "end": 255,
+      "non_renderable": true
     }
   ],
   "entries": [
