@@ -34,4 +34,4 @@ Railway,rail,2,7,railtype,RAIL,auto,,depot,SAAN,"ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,S
 630V DC 4th Rail Electric,f_rl,5,37,railtype,SAA4,auto,,depot,MTRO,"RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ","MTRO,SAA4,SAB4,SAC4,SAAY",65,9,9
 Dual Power (25kV AC/750V DC) Electric,dual,6,47,dual_power_railtype,SAAZ,auto,catenary,depot,SAAZ,"RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ,SAAY","ELRL,SAA3,SAAE,SAAZ,SAAY",,32,20
 Dual Power Metro (25kV AC/630V DC) Electric,dl_4,7,57,dual_power_metro_railtype,SAAY,auto,catenary,depot,SAAY,"RAIL,SAAN,ELRL,SAAE,SAA3,SAA4,3RDL,3RDR,SAAZ,SAAY","ELRL,SAA3,SAAE,SAAZ,SAAY",70,40,26
-Narrow Gauge Railway,ngrl,8,107,railtype,NAAN,lc_ngrl,,ng_depot,NGRL,NGRL,NGRL,45,4,4
+Narrow Gauge Railway,ngrl,8,107,railtype,NAAN,lc_ngrl,,ng_depot,NGRL,NGRL,"NGRL,SAAY",45,4,4
