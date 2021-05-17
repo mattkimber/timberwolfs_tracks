@@ -1,7 +1,17 @@
+v1.1.6
+------
+
+Rendering improvements.
+
+v1.1.5
+------
+
+Better tiling on 1x uphill and flat bridges.
+
 v1.1.4
 ------
 
-Rendering and tiling improvements
+Rendering and tiling improvements.
 
 v1.1.3
 ------

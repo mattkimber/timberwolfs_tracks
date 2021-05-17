@@ -26,6 +26,14 @@ cp intermediate/rail_ballasted_2.vox intermediate/lc_old_track.vox
 cp intermediate/rail_ballasted_2.vox intermediate/lc_historic_track.vox
 cp intermediate/ngrl_ballasted_2.vox intermediate/lc_ngrl_track.vox
 
+# Bridges
+cp intermediate/ptwy_ballasted_2.vox intermediate/ptwy_x_bridge_2.vox
+cp intermediate/rail_ballasted_2.vox intermediate/rail_x_bridge_2.vox
+cp intermediate/tdrl_ballasted_2.vox intermediate/tdrl_x_bridge_2.vox
+cp intermediate/f_rl_ballasted_2.vox intermediate/f_rl_x_bridge_2.vox
+cp intermediate/ngrl_ballasted_2.vox intermediate/ngrl_x_bridge_2.vox
+
+
 ../cargopositor/cargopositor.exe -o intermediate -v voxels positor/lc.json
 ../cargopositor/cargopositor.exe -o intermediate -v voxels positor/lc_narrow_gauge.json
 
