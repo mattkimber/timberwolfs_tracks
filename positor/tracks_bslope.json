@@ -17,10 +17,16 @@
     ],
     "operations": [
 		{  
-		  "name": "_slope_4f",
+		  "name": "_slope_hill_4f",
           "type": "stairstep",
 		  "x_steps": 5.625,
 		  "z_steps": 1
-        }
+        },
+        {  
+            "name": "_slope_bridge_4f",
+            "type": "stairstep",
+            "x_steps": 5.625,
+            "z_steps": 1
+          }
     ]
 }      

@@ -87,9 +87,14 @@ cp voxels/lc_historic_closed.vox intermediate/8/lc_ngrl_closed.vox
 #cp voxels/tracks_2_level_crossing_pieces.vox intermediate/4/tracks_2_z_lc.vox
 
 # Move catenary away from 4f sprites
-mv intermediate/4f/catenary_narrow_slope_4f.vox intermediate/catenary_narrow_hill.vox
-mv intermediate/4f/catenary_wide_1_slope_4f.vox intermediate/catenary_wide_1_hill.vox
-mv intermediate/4f/catenary_wide_2_slope_4f.vox intermediate/catenary_wide_2_hill.vox
+mv intermediate/4f/catenary_narrow_slope_hill_4f.vox intermediate/catenary_narrow_hill.vox
+mv intermediate/4f/catenary_wide_1_slope_hill_4f.vox intermediate/catenary_wide_1_hill.vox
+mv intermediate/4f/catenary_wide_2_slope_hill_4f.vox intermediate/catenary_wide_2_hill.vox
+
+rm intermediate/4f/catenary_narrow_slope_bridge_4f.vox
+rm intermediate/4f/catenary_wide_1_slope_bridge_4f.vox
+rm intermediate/4f/catenary_wide_2_slope_bridge_4f.vox
+
 
 # Overrides
 #cp overrides/* -r intermediate/
