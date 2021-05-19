@@ -11,6 +11,9 @@
     "overlap": -0.1,
     "brightness": -0.1,
     "contrast": 0.1,
+	"max_colour_push": 1,
+	"fosterise": true,
+	"suppress_edge_fosterisation": true,
     "size": {
       "x": 128,
       "y": 128,

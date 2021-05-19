@@ -7,7 +7,7 @@
       "_comment": "flat greys",
       "start": 1,
       "end": 15,
-      "smoothness": -1
+      "smoothness": 0
     },
     {
       "_comment": "blue greys",
@@ -66,7 +66,9 @@
       "_comment": "company colour 2",
       "start": 80,
       "end": 87,
-      "is_secondary_company_colour": true
+      "is_secondary_company_colour": true,
+	  "max_gap_in_region": 8,
+	  "expected_colour_range": 5
     },
     {
       "_comment": "forest greens",
@@ -139,7 +141,9 @@
       "_comment": "company colour 1",
       "start": 198,
       "end": 205,
-      "is_primary_company_colour": true
+      "is_primary_company_colour": true,
+	  "max_gap_in_region": 8,
+	  "expected_colour_range": 5
     },
     {
       "_comment": "sage greens",
