@@ -1,12 +1,12 @@
 {{if not .catenary}}
 // Spritesets
 spriteset({{.id}}_underlays, "sheets_1x/{{.id}}_8bpp.png") {
-    tmpl_underlay_railtypes(1)
+    tmpl_underlay_railtypes_1x()
 }
 
 {{ if eq .globals.track_bpp "32" }}
 alternative_sprites({{.id}}_underlays, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/{{.id}}_32bpp.png",  "sheets_1x/{{.id}}_mask.png") {
-   tmpl_underlay_railtypes(1)
+   tmpl_underlay_railtypes_1x()
 }
 {{end}}
 
@@ -22,12 +22,12 @@ alternative_sprites({{.id}}_underlays, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "shee
  
 
 spriteset({{.id}}_overlays, "sheets_1x/{{.id}}_8bpp.png") {
-    tmpl_overlay_railtypes(1)
+    tmpl_overlay_railtypes_1x()
 }
 
 {{ if eq .globals.track_bpp "32" }}
 alternative_sprites({{.id}}_overlays, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/{{.id}}_32bpp.png") {
-    tmpl_overlay_railtypes(1)
+    tmpl_overlay_railtypes_1x()
 }
 {{end}}
  
@@ -42,12 +42,12 @@ alternative_sprites({{.id}}_overlays, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "shee
  {{end}}
 
 spriteset({{.id}}_tunnel_overlays, "sheets_1x/{{.id}}_8bpp.png") {
-    tmpl_tunnel_tracks(1)
+    tmpl_tunnel_tracks_1x()
 }
 
 {{ if eq .globals.track_bpp "32" }}
 alternative_sprites({{.id}}_tunnel_overlays, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/{{.id}}_32bpp.png") {
-    tmpl_tunnel_tracks(1)
+    tmpl_tunnel_tracks_1x()
 }
 {{end}}
  
@@ -63,12 +63,12 @@ alternative_sprites({{.id}}_tunnel_overlays, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, 
 
 // Bridge surface spritesets
 spriteset({{.id}}_bridge_underlay, "sheets_1x/{{.id}}_8bpp.png") {
-    tmpl_bridges_underlay(1)
+    tmpl_bridges_underlay_1x()
 }
 
 {{ if eq .globals.track_bpp "32" }}
 alternative_sprites({{.id}}_bridge_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "sheets_1x/{{.id}}_32bpp.png") {
-    tmpl_bridges_underlay(1)
+    tmpl_bridges_underlay_1x()
 }
 {{end}}
 

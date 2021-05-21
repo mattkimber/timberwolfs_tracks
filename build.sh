@@ -95,6 +95,9 @@ rm intermediate/4f/catenary_narrow_slope_bridge_4f.vox
 rm intermediate/4f/catenary_wide_1_slope_bridge_4f.vox
 rm intermediate/4f/catenary_wide_2_slope_bridge_4f.vox
 
+mkdir -p intermediate/4/rev
+mv intermediate/4/*rev*.vox intermediate/4/rev
+
 
 # Overrides
 #cp overrides/* -r intermediate/
@@ -121,7 +124,8 @@ render "$1" voxels/signals signal
 # General
 render "$1" intermediate/1 1x
 render "$1" intermediate/2 2x
-render "$1" intermediate/4 4x
+render "$1" intermediate/4/ 4x
+render "$1" intermediate/4/rev/ 4x_r
 render "$1" intermediate/4f 4x_f
 render "$1" intermediate/8 8x
 

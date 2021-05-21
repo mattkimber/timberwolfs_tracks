@@ -1,0 +1,80 @@
+// Ground and slope tiles
+template ground_tile_1x(x, y, u, v) { [x*1, (y+8)*1, 64*1, 31*1, u-(31*1), v ] }
+
+template ground_tile_slope_1x(x, y, u, v) { [x*1, y*1, 64*1, 39*1, u-(31*1), v ] }
+
+
+// Tracks with ballast
+template tmpl_straight_y_1x(y) {
+    ground_tile_1x(0, y, 0, 0)
+    ground_tile_1x(72, y, 0, 0)
+}
+
+// Bridge straights
+template tmpl_bridge_straight_y_1x(y) {
+    ground_tile_1x(0, y, 0, 0)
+    ground_tile_1x(72, y, 0, 0)
+}
+
+
+template tmpl_slope_y_1x(y) {
+    ground_tile_slope_1x(0, y, 0, -7)
+    ground_tile_slope_1x(72, y, 0, -7)
+    ground_tile_slope_1x(144, y, 0, -7)
+    ground_tile_slope_1x(216, y, 0, -7)
+}
+
+
+template tmpl_bridge_slope_y_1x(y) {
+    ground_tile_slope_1x(0, y, 0, -7)
+    ground_tile_slope_1x(72, y, 0, -7)
+    ground_tile_slope_1x(144, y, 0, -7)
+    ground_tile_slope_1x(216, y, 0, -7)
+}
+
+
+template tmpl_diagonal_y_1x(y) {
+    ground_tile_1x(72,  y+43, 0, 0)
+    ground_tile_1x(0,   y, 0, 0)
+    ground_tile_1x(216, y, 0, 0)
+    ground_tile_1x(0,   y+43, 0, 0)
+}
+
+// Ballast underlays
+template tmpl_crossing_underlays_1x() {
+    ground_tile_1x(72, 387, 0, 0)
+    ground_tile_1x(216, 387, 0, 0)
+    ground_tile_1x(0, 387, 0, 0)
+    ground_tile_1x(144, 387, 0, 0)
+    ground_tile_1x(0, 430, 0, 0)
+}
+
+template tmpl_underlay_railtypes_1x() {
+    tmpl_straight_y_1x(0)
+    tmpl_diagonal_y_1x(43)
+    tmpl_slope_y_1x(172)
+
+    // X-crossing
+    ground_tile_1x(0, 258, 0, 0)
+
+    tmpl_crossing_underlays_1x()
+}
+
+// Tracks without ballast
+template tmpl_overlay_railtypes_1x() {
+    tmpl_straight_y_1x(215)
+    tmpl_diagonal_y_1x(301)
+    tmpl_slope_y_1x(172) // only used to show track reservations
+}
+
+// Bridges
+template tmpl_bridges_underlay_1x() {
+    tmpl_bridge_straight_y_1x(473)
+    tmpl_bridge_slope_y_1x(129)
+}
+
+// Tracks in tunnels
+template tmpl_tunnel_tracks_1x() {
+    tmpl_straight_y_1x(0)
+    tmpl_straight_y_1x(0)
+}

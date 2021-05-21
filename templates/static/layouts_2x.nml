@@ -1,52 +1,52 @@
 // Ground and slope tiles
-template ground_tile_2x(x, y, u, v) { [x*2, (y+8)*2, 64*2, 31*2, u-(31*2), v] }
+template ground_tile_2x(x, y, u, v) { [x*2, (y+8)*2, 64*2, 31*2, u-(31*2), v ] }
 
 template ground_tile_slope_2x(x, y, u, v) { [x*2, y*2, 64*2, 39*2, u-(31*2), v ] } //((v-7)*m)-(m/2)-t] }
 
 
 // Tracks with ballast
 template tmpl_straight_y_2x(y) {
-    ground_tile_2x(0, y, 0, 1)
-    ground_tile_2x(72, y, 2, 0)
+    ground_tile_2x(0, y, 0, 0)
+    ground_tile_2x(72, y, 0, 0)
 }
 
 // Bridge straights
 template tmpl_bridge_straight_y_2x(y) {
-    ground_tile_2x(0, y, -2, 2)
-    ground_tile_2x(72, y, 5, 0)
+    ground_tile_2x(0, y, -2, 1)
+    ground_tile_2x(72, y, 2, 1)
 }
 
 
 template tmpl_slope_y_2x(y) {
-    ground_tile_slope_2x(0, y, 0, -15)
-    ground_tile_slope_2x(72, y, 2, -17)
-    ground_tile_slope_2x(144, y, 0, -15)
-    ground_tile_slope_2x(216, y, 2, -18)
+    ground_tile_slope_2x(0, y, 0, -14)
+    ground_tile_slope_2x(72, y, 0, -14)
+    ground_tile_slope_2x(144, y, 0, -14)
+    ground_tile_slope_2x(216, y, 0, -14)
 }
 
 
 template tmpl_bridge_slope_y_2x(y) {
-    ground_tile_slope_2x(0, y, -1, -14)
-    ground_tile_slope_2x(72, y, 2, -17)
-    ground_tile_slope_2x(144, y, -2, -15)
-    ground_tile_slope_2x(216, y, 2, -18)
+    ground_tile_slope_2x(0, y, 0, -14)
+    ground_tile_slope_2x(72, y, 0, -14)
+    ground_tile_slope_2x(144, y, 0, -14)
+    ground_tile_slope_2x(216, y, 0, -14)
 }
 
 
 template tmpl_diagonal_y_2x(y) {
-    ground_tile_2x(72,  y+43, 0, 1)
-    ground_tile_2x(0,   y, 0, 1)
+    ground_tile_2x(72,  y+43, 0, 0)
+    ground_tile_2x(0,   y, 0, 0)
     ground_tile_2x(216, y, 0, 0)
     ground_tile_2x(0,   y+43, 0, 0)
 }
 
 // Ballast underlays
 template tmpl_crossing_underlays_2x() {
-    ground_tile_2x(72, 387, -2, 3)
-    ground_tile_2x(216, 387, -2, 2)
-    ground_tile_2x(0, 387, -2, 3)
-    ground_tile_2x(144, 387, -2, 2)
-    ground_tile_2x(0, 430, 4, -1)
+    ground_tile_2x(72, 387, 0, 0)
+    ground_tile_2x(216, 387, 0, 0)
+    ground_tile_2x(0, 387, 0, 0)
+    ground_tile_2x(144, 387, 0, 0)
+    ground_tile_2x(0, 430, 0, 0)
 }
 
 template tmpl_underlay_railtypes_2x() {
@@ -55,7 +55,7 @@ template tmpl_underlay_railtypes_2x() {
     tmpl_slope_y_2x(172)
 
     // X-crossing
-    ground_tile_2x(0, 258, 4, -1)
+    ground_tile_2x(0, 258, 0, 0)
 
     tmpl_crossing_underlays_2x()
 }
@@ -70,7 +70,7 @@ template tmpl_overlay_railtypes_2x() {
 // Bridges
 template tmpl_bridges_underlay_2x() {
     tmpl_bridge_straight_y_2x(473)
-    tmpl_bridge_slope_y_2x(172)
+    tmpl_bridge_slope_y_2x(129)
 }
 
 // Tracks in tunnels

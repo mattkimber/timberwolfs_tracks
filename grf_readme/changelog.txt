@@ -2,6 +2,7 @@ v1.1.7
 ------
 
 Straight-to-diagonal track compatibility
+Better alignment of most track tiles
 
 v1.1.6
 ------
