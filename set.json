@@ -17,6 +17,9 @@
           "template":  "templates/static/layouts.nml"
         },
         {
+          "template":  "templates/static/layouts_2x.nml"
+        },
+        {
             "template":  "templates/static/crossing_layouts.nml"
         }
     ],
