@@ -23,9 +23,9 @@
   "sprites": [
     { "angle": 45,
       "width": 64,
-      "offset_x": 1,
-      "offset_y": -2,
-      "joggle": 1.5
+      "offset_x": 0,
+      "offset_y": -3,
+      "joggle": -1
     }
   ]
 }

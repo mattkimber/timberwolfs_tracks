@@ -34,10 +34,10 @@ template tmpl_bridge_slope_y_2x(y) {
 
 
 template tmpl_diagonal_y_2x(y) {
-    ground_tile_2x(72,  y+43, 0, 0)
-    ground_tile_2x(0,   y, 0, 0)
-    ground_tile_2x(216, y, 0, 0)
-    ground_tile_2x(0,   y+43, 0, 0)
+    ground_tile_2x(72,  y+43, 0, 0) // /---\
+    ground_tile_2x(0,   y, 0, 0)    // \---/
+    ground_tile_2x(216, y, 0, 0)    // >
+    ground_tile_2x(0,   y+43, 0, 0) // <
 }
 
 // Ballast underlays

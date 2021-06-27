@@ -28,9 +28,10 @@
       "joggle": 2.0
     },
     { 
+      "comment": "unused",
       "angle": 135,
       "width": 64,
-      "offset_y": -1
+      "offset_y": -100
     },
     { 
       "angle": 225,
@@ -42,6 +43,7 @@
       "angle": 315,
       "width": 64,
       "offset_y": -1,
+      "offset_x": -1,
       "flip": false
     }
   ]

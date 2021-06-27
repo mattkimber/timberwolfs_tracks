@@ -25,21 +25,22 @@
       "angle": 45,
       "width": 64,
       "offset_x": 0,
-      "offset_y": -1,
+      "offset_y": -2,
       "joggle": 1.0
     },
     { 
       "angle": 135,
       "width": 64,
       "offset_x": 2,
-      "offset_y": -2
+      "offset_y": -1,
+      "joggle": 1
     },
     { 
       "angle": 225,
       "width": 64,
       "offset_x": 0,
-      "offset_y": -1,
-      "joggle": 1.0,
+      "offset_y": -2,
+      "joggle": 0,
       "flip": true
     },
     { 
@@ -47,7 +48,6 @@
       "width": 64,
       "offset_x": 0,
       "offset_y": -2,
-      "joggle": 1.5,
       "flip": true
     }
   ]

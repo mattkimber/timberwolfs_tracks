@@ -1,3 +1,9 @@
+v1.1.8
+------
+
+Improved alignments and tile borders.
+Now alignment-compatible with most "standard" 1x track sets.
+
 v1.1.7
 ------
 
