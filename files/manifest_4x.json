@@ -28,10 +28,10 @@
       "joggle": 2.0
     },
     { 
-      "comment": "unused",
+      "comment": "used for ballast",
       "angle": 135,
       "width": 64,
-      "offset_y": -100
+      "offset_y": -2
     },
     { 
       "angle": 225,
