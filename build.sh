@@ -182,6 +182,10 @@ mkdir -p sheets_2x
 ../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet_masked.json -m 4 -k files/mask_1x.png
 ../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet_masked.json -m 8 -k files/mask_2x.png
 
+../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet_lc.json -m 4 -k files/lc_mask_1x.png
+../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet_lc.json -m 8 -k files/lc_mask_2x.png
+
+
 ../splatter/splatter.exe -i 1x -o sheets_1x -d spritesheet.json -m 4
 ../splatter/splatter.exe -i 2x -o sheets_2x -d spritesheet.json -m 8
 

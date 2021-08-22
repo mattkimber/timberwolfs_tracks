@@ -1,3 +1,9 @@
+v1.1.10
+-------
+
+Calm down rendering.
+Fix level crossing overhang to adjacent tiles.
+
 v1.1.9
 ------
 

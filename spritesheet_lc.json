@@ -1,0 +1,16 @@
+[
+  {
+    "prefixes": [
+        "lc_historic",
+        "lc_modern",
+        "lc_old",
+        "lc_plateway",
+        "lc_ngrl"
+    ],
+	"suffixes": [
+		"32bpp",
+		"8bpp",
+		"mask"
+		]
+  }
+]

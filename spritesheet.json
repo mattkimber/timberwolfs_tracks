@@ -1,11 +1,6 @@
 [
   {
     "prefixes": [
-        "lc_historic",
-        "lc_modern",
-        "lc_old",
-        "lc_plateway",
-        "lc_ngrl",
         "fence_wooden",
         "fence_railings",
         "fence_mesh",

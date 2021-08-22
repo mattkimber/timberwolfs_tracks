@@ -1,10 +1,11 @@
-template ground_tile_m(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, 0 ] }
+
+template ground_tile_mx(x, y, u, v, m) { [x*m, (y+8)*m, 64*m, 31*m, (u*m)-(31*m), (v*m) ] }
 
 
 // Template for track overlays
 template tmpl_rails_crossing(m) {
-    ground_tile_m(0, 86, m)
-    ground_tile_m(72, 86, m)
+    ground_tile_mx(0, 86, 0, 0, m)
+    ground_tile_mx(72, 86, 0, 0, m)
 }
 
 
