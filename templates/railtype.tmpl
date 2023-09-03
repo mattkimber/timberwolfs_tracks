@@ -121,13 +121,20 @@ alternative_sprites({{.id}}_pylon, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "sheets_2
 {{- end}}
 
 // GUI
-spriteset({{.id}}_gui, "gui/gui_{{.id}}_8bpp.png") {
+spriteset({{.id}}_gui, "gui/1x/gui_{{.id}}_8bpp.png") {
     tmpl_gui()
 }
 
-
-alternative_sprites({{.id}}_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "gui/gui_{{.id}}_32bpp.png") {
+alternative_sprites({{.id}}_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,  "gui/1x/gui_{{.id}}_32bpp.png") {
     tmpl_gui()
+}
+
+alternative_sprites({{.id}}_gui, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "gui/2x/gui_{{.id}}_8bpp.png") {
+    tmpl_gui_2x()
+}
+
+alternative_sprites({{.id}}_gui, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP,  "gui/2x/gui_{{.id}}_32bpp.png") {
+    tmpl_gui_2x()
 }
 
 // Railtype defs
