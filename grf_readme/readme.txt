@@ -17,6 +17,7 @@ Features
   train sets)
 * Standard gauge, narrow gauge and plateway (with compatible train
   sets)
+* Single and double yellow aspects for JGRPP realistic braking
 
 Gameplay Notes
 --------------

@@ -4,7 +4,7 @@
 ../roadie/roadie.exe set.json
 
 # NML
-../nml/nmlc.exe -c timberwolfs_tracks.nml
+../jgr-nml/nmlc.exe -c timberwolfs_tracks.nml
 
 echo "Building TAR"
 mkdir -p timberwolfs_tracks

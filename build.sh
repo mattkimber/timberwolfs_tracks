@@ -192,8 +192,8 @@ mkdir -p sheets_2x
 # Assemble the output using Roadie
 ../roadie/roadie.exe set.json
 
-# NML
-../nml/nmlc.exe -c timberwolfs_tracks.nml
+# NML (note: requires JGR's fork)
+../jgr-nml/nmlc.exe -c timberwolfs_tracks.nml
 
 echo "Building TAR"
 mkdir -p timberwolfs_tracks
