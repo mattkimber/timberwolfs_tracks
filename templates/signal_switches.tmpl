@@ -53,3 +53,34 @@ switch (FEAT_RAILTYPES, SELF, switch_default_signals, extra_callback_info2 & 0x0
 
     CB_FAILED;
 }
+
+switch (FEAT_RAILTYPES, SELF, switch_underground_signals, extra_callback_info2 & 0x00FFFFFF) {
+    // Colour signals
+    // Type     Era       Green?
+    (0 << 16) | (0 << 8) | 0 : spriteset_lu_block_red;
+    (0 << 16) | (0 << 8) | 1 : spriteset_lu_block_green;
+    (1 << 16) | (0 << 8) | 0 : spriteset_lu_entry_red;
+    (1 << 16) | (0 << 8) | 1 : spriteset_lu_entry_green;
+    (2 << 16) | (0 << 8) | 0 : spriteset_lu_exit_red;
+    (2 << 16) | (0 << 8) | 1 : spriteset_lu_exit_green;
+    (3 << 16) | (0 << 8) | 0 : spriteset_lu_combo_red;
+    (3 << 16) | (0 << 8) | 1 : spriteset_lu_combo_green;
+    (4 << 16) | (0 << 8) | 0 : spriteset_lu_path_red;
+    (4 << 16) | (0 << 8) | 1 : spriteset_lu_path_green;
+    (5 << 16) | (0 << 8) | 0 : spriteset_lu_one_way_path_red;
+    (5 << 16) | (0 << 8) | 1 : spriteset_lu_one_way_path_green;
+    // Semaphore signals
+    (0 << 16) | (1 << 8) | 0 : spriteset_semaphore_block_red;
+    (0 << 16) | (1 << 8) | 1 : spriteset_semaphore_block_green;
+    (1 << 16) | (1 << 8) | 0 : spriteset_semaphore_entry_red;
+    (1 << 16) | (1 << 8) | 1 : spriteset_semaphore_entry_green;
+    (2 << 16) | (1 << 8) | 0 : spriteset_semaphore_exit_red;
+    (2 << 16) | (1 << 8) | 1 : spriteset_semaphore_exit_green;
+    (3 << 16) | (1 << 8) | 0 : spriteset_semaphore_combo_red;
+    (3 << 16) | (1 << 8) | 1 : spriteset_semaphore_combo_green;
+    (4 << 16) | (1 << 8) | 0 : spriteset_semaphore_path_red;
+    (4 << 16) | (1 << 8) | 1 : spriteset_semaphore_path_green;
+    (5 << 16) | (1 << 8) | 0 : spriteset_semaphore_one_way_path_red;
+    (5 << 16) | (1 << 8) | 1 : spriteset_semaphore_one_way_path_green;
+    CB_FAILED;
+}

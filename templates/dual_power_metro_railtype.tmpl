@@ -37,7 +37,7 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         menu_text: string(STR_MENU_{{.rail_type_label}});
         toolbar_caption: string(STR_TOOLBAR_{{.rail_type_label}});
         
-        extra_aspects: 2;
+        extra_aspects: {{.additional_aspects}};
     }
 
     graphics {
@@ -54,6 +54,6 @@ item(FEAT_RAILTYPES, {{.id}}, {{.numeric_id}}) {
         fences: dual_fence_switch;
         gui: f_rl_gui;      
 
-        signals: switch_default_signals; 
+        signals: switch_{{.signal_type}}_signals;  
     }
 }

@@ -2,6 +2,7 @@ v1.2.0
 ------
 
 Extra signal aspects for JGRPP
+Dedicated LU-style colour light signals for 4th rail tracks
 
 v1.1.12
 -------

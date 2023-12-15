@@ -14,9 +14,9 @@
     "max_colour_push": 1,
     "fosterise": true,
     "size": {
-      "x": 96,
-      "y": 96,
-      "z": 140
+      "x": 120,
+      "y": 120,
+      "z": 175
     },
     "render_elevation": 30,
     "sprites": [
