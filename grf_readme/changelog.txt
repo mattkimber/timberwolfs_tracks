@@ -1,3 +1,8 @@
+v1.3.0
+------
+
+Added JGRPP no entry signals (thanks to WolfieFox)
+
 v1.2.0
 ------
 
